@@ -164,10 +164,26 @@ def handle(tg,msg,allowed,st):
     elif cmd in R:reply=R[cmd]()
     else:reply='Comando sconosciuto. Scrivi /aiuto.'
     tg.send(reply,thread=th)
+INTRO=("BENVENUTO NELLA CONSOLE DI SPRINGFIELDPEDIA\n\n"
+"Questo gruppo e il pannello di controllo del canale. Il bot controlla i messaggi ogni 10 minuti circa, quindi le risposte non sono istantanee.\n\n"
+"COME PARTIRE (una volta sola)\n"
+"Dentro ogni argomento scrivi /qui nome (comandi, idee, gestione, avvisi, diagnostica). Il bot lo registra e ti mostra il menu.\n\n"
+"GLI ARGOMENTI\n"
+"- comandi: il telecomando. /menu apre i pulsanti, /stato mostra i video, /prossimo le prossime uscite, /settimana i 7 giorni, /video V1 il dettaglio.\n"
+"- idee: scrivi /idea testo per salvare un'idea al volo, /idee per rileggere le ultime 10.\n"
+"- gestione: avanzamento e spese. /fatto V1 voce segna una fase fatta (script, voce, montaggio, miniatura, upload), /annulla la toglie, /costo 1.5 nota registra una spesa, /costi il totale. Nel menu Video trovi gli stessi segni con un tocco.\n"
+"- avvisi: ogni mattina alle 8 il bot scrive cosa e in ritardo o in scadenza e gli Short di domani. /avvisi lo manda subito.\n"
+"- diagnostica: /diagnostica dice se la console funziona e quali argomenti mancano.\n\n"
+"IL MENU\n"
+"Il pulsante Menu accanto alla tastiera elenca tutti i comandi. /menu mostra anche i pulsanti da toccare: Stato, Prossimo, Settimana, Video, Idee, Costi, Diagnostica, Avvisi, Aiuto.\n\n"
+"Per l'elenco completo scrivi /aiuto. Solo tu puoi comandare il bot.")
 def run(tg,allowed,mode='poll'):
     st=load('state.json',{});st.setdefault('topics',{});n=0
     if mode=='poll':
         setup_menu(tg,st)
+        if st.get('intro_v')!=1:
+            try:tg.send(INTRO,markup=kb_menu());st['intro_v']=1
+            except Exception as e:print('intro:',e)
         for up in tg.updates(st.get('offset',0)):
             st['offset']=up['update_id']+1
             if 'message' in up:handle(tg,up['message'],allowed,st);n+=1
