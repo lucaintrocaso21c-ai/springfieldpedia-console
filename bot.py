@@ -11,7 +11,7 @@ def load(n,default):
 def save(n,v):json.dump(v,open(os.path.join(D,n),'w',encoding='utf-8'),ensure_ascii=False,indent=1)
 def oggi():return dt.datetime.now(dt.timezone(dt.timedelta(hours=1))).date()
 class TG:
-    def __init__(s,token,chat):s.t=token;s.chat=chat
+    def __init__(s,token,chat):s.t=(token or '').strip();s.chat=(chat or '').strip()
     def call(s,m,**p):
         req=urllib.request.Request('https://api.telegram.org/bot%s/%s'%(s.t,m),urllib.parse.urlencode({k:v for k,v in p.items() if v is not None}).encode())
         return json.load(urllib.request.urlopen(req,timeout=60))
@@ -126,6 +126,6 @@ def run(tg,allowed,mode='poll'):
         a=avvisi();tg.send(a,thread=st['topics'].get('avvisi'));st['last_alert']=dt.datetime.now().isoformat(timespec='minutes')
     st['last_run']=dt.datetime.now().isoformat(timespec='minutes');st['runs']=st.get('runs',0)+1;st['processed']=st.get('processed',0)+n;save('state.json',st);return n
 if __name__=='__main__':
-    tok=os.environ.get('TELEGRAM_BOT_TOKEN');chat=os.environ.get('TELEGRAM_CHAT_ID');al=os.environ.get('ALLOWED_USER_ID')
+    tok=os.environ.get('TELEGRAM_BOT_TOKEN');chat=os.environ.get('TELEGRAM_CHAT_ID');al=(os.environ.get('ALLOWED_USER_ID') or '').strip()
     if not (tok and chat and al):print('Mancano i segreti TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, ALLOWED_USER_ID');sys.exit(1)
     print('messaggi gestiti:',run(TG(tok,chat),al,sys.argv[1] if len(sys.argv)>1 else 'poll'))
