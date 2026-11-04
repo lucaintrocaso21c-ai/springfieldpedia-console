@@ -19,7 +19,7 @@ class TG:
         ps=[text[i:i+3900] for i in range(0,len(text),3900)] or ['(vuoto)']
         for j,p in enumerate(ps):
             s.call('sendMessage',chat_id=chat or s.chat,text=p,message_thread_id=thread,disable_web_page_preview='true',reply_markup=json.dumps(markup) if (markup and j==len(ps)-1) else None)
-    def updates(s,offset):return s.call('getUpdates',offset=offset,timeout=0,allowed_updates=json.dumps(['message','callback_query']))['result']
+    def updates(s,offset,wait=0):return s.call('getUpdates',offset=offset,timeout=wait,allowed_updates=json.dumps(['message','callback_query']))['result']
 def videos():
     cal=load('calendario.json',[]);prog=load('progress.json',{});out=[]
     for r in cal:
@@ -152,6 +152,11 @@ def handle(tg,msg,allowed,st):
     u=msg.get('from',{}).get('id');text=(msg.get('text') or '').strip()
     if text.split(' ')[0].split('@')[0].lower()=='/id':
         tg.send('Il tuo ID utente: %s\nID di questa chat: %s'%(u,msg.get('chat',{}).get('id')),thread=msg.get('message_thread_id'),chat=msg.get('chat',{}).get('id'));return
+    th0=msg.get('message_thread_id');ftc=(msg.get('reply_to_message') or {}).get('forum_topic_created')
+    if th0 and ftc:
+        nm=(ftc.get('name') or '').lower()
+        for tn in TOPICS:
+            if tn in nm and st['topics'].get(tn)!=th0:st['topics'][tn]=th0
     parts=text.split(' ',1)
     if len(parts)==2 and parts[1].strip().lower() in LABELS and not text.startswith('/'):text=LABELS[parts[1].strip().lower()]
     if str(u)!=str(allowed) or not text.startswith('/'):return
@@ -191,11 +196,21 @@ def run(tg,allowed,mode='poll'):
         if st.get('intro_v')!=2:
             try:tg.send(INTRO,markup=kb_menu());tastiera(tg,None);st['intro_v']=2
             except Exception as e:print('intro:',e)
-        for up in tg.updates(st.get('offset',0)):
-            st['offset']=up['update_id']+1
-            if 'message' in up:handle(tg,up['message'],allowed,st);n+=1
-            if 'callback_query' in up:handle_cb(tg,up['callback_query'],allowed);n+=1
-            save('state.json',st)
+        import time
+        fine=time.time()+int(os.environ.get('LOOP_SECONDS') or 0)
+        while True:
+            try:ups=tg.updates(st.get('offset',0),25 if os.environ.get('LOOP_SECONDS') else 0)
+            except Exception as e:
+                print('getUpdates:',e);ups=[]
+                if os.environ.get('LOOP_SECONDS'):time.sleep(3)
+            for up in ups:
+                st['offset']=up['update_id']+1
+                try:
+                    if 'message' in up:handle(tg,up['message'],allowed,st);n+=1
+                    if 'callback_query' in up:handle_cb(tg,up['callback_query'],allowed);n+=1
+                except Exception as e:print('errore update:',e)
+                save('state.json',st)
+            if time.time()>=fine:break
     if mode=='avvisi':
         a=avvisi();tg.send(a,thread=st['topics'].get('avvisi'));st['last_alert']=dt.datetime.now().isoformat(timespec='minutes')
     st['last_run']=dt.datetime.now().isoformat(timespec='minutes');st['runs']=st.get('runs',0)+1;st['processed']=st.get('processed',0)+n;save('state.json',st);return n
