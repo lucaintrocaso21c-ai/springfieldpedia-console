@@ -15,10 +15,11 @@ class TG:
     def call(s,m,**p):
         req=urllib.request.Request('https://api.telegram.org/bot%s/%s'%(s.t,m),urllib.parse.urlencode({k:v for k,v in p.items() if v is not None}).encode())
         return json.load(urllib.request.urlopen(req,timeout=60))
-    def send(s,text,thread=None,chat=None):
-        for i in range(0,len(text),3900):
-            s.call('sendMessage',chat_id=chat or s.chat,text=text[i:i+3900],message_thread_id=thread,disable_web_page_preview='true')
-    def updates(s,offset):return s.call('getUpdates',offset=offset,timeout=0,allowed_updates=json.dumps(['message']))['result']
+    def send(s,text,thread=None,chat=None,markup=None):
+        ps=[text[i:i+3900] for i in range(0,len(text),3900)] or ['(vuoto)']
+        for j,p in enumerate(ps):
+            s.call('sendMessage',chat_id=chat or s.chat,text=p,message_thread_id=thread,disable_web_page_preview='true',reply_markup=json.dumps(markup) if (markup and j==len(ps)-1) else None)
+    def updates(s,offset):return s.call('getUpdates',offset=offset,timeout=0,allowed_updates=json.dumps(['message','callback_query']))['result']
 def videos():
     cal=load('calendario.json',[]);prog=load('progress.json',{});out=[]
     for r in cal:
@@ -96,18 +97,66 @@ def avvisi():
     sh=[r for r in load('calendario.json',[]) if r['tipo']=='Short' and r['data']==(t+dt.timedelta(days=1)).isoformat()]
     if sh:out.append('Domani %d Short: '%len(sh)+'; '.join(r['titolo'][:40] for r in sh))
     return 'AVVISI %s\n'%t.isoformat()+('\n\n'.join(out) if out else 'Tutto a posto: niente in ritardo o in scadenza.')
+COMANDI_MENU=[('menu','Menu con i pulsanti'),('stato','Situazione dei video'),('prossimo','Prossime uscite'),('settimana','Uscite dei prossimi 7 giorni'),('video','Dettaglio di un video'),('idee','Ultime idee'),('costi','Spese'),('diagnostica','Stato della console'),('avvisi','Manda ora gli avvisi'),('aiuto','Elenco comandi')]
+def kb_menu():
+    B=lambda t,d:{'text':t,'callback_data':d}
+    return {'inline_keyboard':[[B('📊 Stato','c:stato'),B('📅 Prossimo','c:prossimo')],[B('🗓 Settimana','c:settimana'),B('🎬 Video','c:video')],[B('💡 Idee','c:idee'),B('💶 Costi','c:costi')],[B('🔧 Diagnostica','c:diag'),B('🔔 Avvisi','c:avvisi')],[B('❓ Aiuto','c:aiuto')]]}
+def kb_videos():
+    vs=[v for v in videos() if v['data']>=oggi().isoformat() or v['manca']][:8]
+    rows=[[{'text':'%s %s - %s'%(v['video'],v['data'][5:],v['titolo'][:28]),'callback_data':'v:'+v['video']}] for v in vs]
+    return {'inline_keyboard':rows+[[{'text':'⬅ Menu','callback_data':'c:menu'}]]}
+def kb_video(k):
+    v=[x for x in videos() if x['video']==k]
+    if not v:return kb_menu()
+    v=v[0];row=[{'text':('✅ ' if f in v['fasi'] else '⬜ ')+f,'callback_data':'f:%s:%s'%(k,f)} for f in FASI]
+    return {'inline_keyboard':[row[:3],row[3:],[{'text':'⬅ Video','callback_data':'c:video'},{'text':'Menu','callback_data':'c:menu'}]]}
+def setup_menu(tg,st):
+    if st.get('menu_v')==2:return
+    cmds=json.dumps([{'command':c,'description':d} for c,d in COMANDI_MENU])
+    try:
+        for sc in ('default','all_private_chats','all_group_chats','all_chat_administrators'):
+            tg.call('setMyCommands',commands=cmds,scope=json.dumps({'type':sc}))
+        tg.call('setChatMenuButton',menu_button=json.dumps({'type':'commands'}))
+        st['menu_v']=2
+    except Exception as e:print('setup_menu:',e)
+def dispatch_cb(data):
+    p=data.split(':')
+    if p[0]=='c':
+        k=p[1]
+        if k=='menu':return 'MENU - scegli:',kb_menu()
+        if k=='video':return 'Quale video?',kb_videos()
+        return {'stato':cmd_stato,'prossimo':cmd_prossimo,'settimana':cmd_settimana,'idee':cmd_idee,'costi':cmd_costi,'diag':cmd_diag,'avvisi':avvisi,'aiuto':cmd_aiuto}[k](),kb_menu()
+    if p[0]=='v':return cmd_video([p[1]]),kb_video(p[1])
+    if p[0]=='f':
+        k,f=p[1],p[2];v=[x for x in videos() if x['video']==k]
+        fatto=bool(v) and f in v[0]['fasi'];r=setfase([k,f],not fatto)
+        return r,kb_video(k)
+    return 'Pulsante non riconosciuto.',kb_menu()
+def handle_cb(tg,cb,allowed):
+    u=cb.get('from',{}).get('id');m=cb.get('message') or {}
+    if str(u)!=str(allowed):
+        try:tg.call('answerCallbackQuery',callback_query_id=cb['id'],text='Non autorizzato')
+        except Exception:pass
+        return
+    try:tg.call('answerCallbackQuery',callback_query_id=cb['id'])
+    except Exception:pass
+    try:text,kb=dispatch_cb(cb.get('data') or '')
+    except Exception as e:text,kb='Errore: %s'%e,kb_menu()
+    tg.send(text,thread=m.get('message_thread_id'),chat=m.get('chat',{}).get('id'),markup=kb)
 def handle(tg,msg,allowed,st):
     u=msg.get('from',{}).get('id');text=(msg.get('text') or '').strip()
     if text.split(' ')[0].split('@')[0].lower()=='/id':
         tg.send('Il tuo ID utente: %s\nID di questa chat: %s'%(u,msg.get('chat',{}).get('id')),thread=msg.get('message_thread_id'),chat=msg.get('chat',{}).get('id'));return
     if str(u)!=str(allowed) or not text.startswith('/'):return
     th=msg.get('message_thread_id');cmd,_,rest=text.partition(' ');cmd=cmd.split('@')[0].lower();a=rest.split()
-    R={'/start':cmd_aiuto,'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
+    R={'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
     if cmd=='/qui':
         n=(a[0].lower() if a else '')
         if n not in TOPICS:reply='Uso: /qui nome, dove nome e uno tra: '+', '.join(TOPICS)
-        else:st['topics'][n]=th;reply='Argomento "%s" registrato.'%n
-    elif cmd=='/video':reply=cmd_video(a)
+        else:st['topics'][n]=th;tg.send('Argomento "%s" registrato.'%n,thread=th);tg.send('MENU - scegli:',thread=th,markup=kb_menu());return
+    elif cmd in('/menu','/start'):tg.send('MENU - scegli:',thread=th,markup=kb_menu());return
+    elif cmd=='/video' and not a:tg.send('Quale video?',thread=th,markup=kb_videos());return
+    elif cmd=='/video':tg.send(cmd_video(a),thread=th,markup=kb_video(a[0].upper()));return
     elif cmd=='/fatto':reply=setfase(a,True)
     elif cmd=='/annulla':reply=setfase(a,False)
     elif cmd=='/idea':reply=cmd_idea(rest)
@@ -118,9 +167,11 @@ def handle(tg,msg,allowed,st):
 def run(tg,allowed,mode='poll'):
     st=load('state.json',{});st.setdefault('topics',{});n=0
     if mode=='poll':
+        setup_menu(tg,st)
         for up in tg.updates(st.get('offset',0)):
             st['offset']=up['update_id']+1
             if 'message' in up:handle(tg,up['message'],allowed,st);n+=1
+            if 'callback_query' in up:handle_cb(tg,up['callback_query'],allowed);n+=1
             save('state.json',st)
     if mode=='avvisi':
         a=avvisi();tg.send(a,thread=st['topics'].get('avvisi'));st['last_alert']=dt.datetime.now().isoformat(timespec='minutes')
