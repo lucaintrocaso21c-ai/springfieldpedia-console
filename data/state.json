@@ -1,10 +1,10 @@
 {
- "offset": 236649656,
+ "offset": 236649658,
  "topics": {},
- "last_run": "2026-11-04T19:12",
+ "last_run": "2026-11-04T19:30",
  "last_alert": "2026-11-04T18:30",
- "runs": 4,
- "processed": 6,
+ "runs": 5,
+ "processed": 8,
  "menu_v": 2,
- "intro_v": 1
+ "intro_v": 2
 }
