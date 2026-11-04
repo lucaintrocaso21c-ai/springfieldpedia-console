@@ -16,7 +16,7 @@
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "titolo": "Short 1 - Gancio sul video 1",
   "video": "V1",
   "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
   "stato": "Da fare"
@@ -26,10 +26,10 @@
   "data": "2026-11-11",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
-  "video": "V1",
-  "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -38,7 +38,7 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V1",
   "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
   "stato": "Da fare"
@@ -60,7 +60,7 @@
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "titolo": "Short 1 - Gancio sul video 2",
   "video": "V2",
   "episodi": "S08E23 S08E02 S06E25 S06E06 S05E02 S08E10 S09E01 S04E12 S04E17 S04E03",
   "stato": "Da fare"
@@ -71,7 +71,7 @@
   "ora": "18:30",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V2",
   "episodi": "S08E23 S08E02 S06E25 S06E06 S05E02 S08E10 S09E01 S04E12 S04E17 S04E03",
   "stato": "Da fare"
@@ -82,20 +82,20 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V1",
-  "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V2",
+  "episodi": "S08E23 S08E02 S06E25 S06E06 S05E02 S08E10 S09E01 S04E12 S04E17 S04E03",
   "stato": "Da fare"
  },
  {
   "settimana": 1,
   "data": "2026-11-15",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
-  "video": "V2",
-  "episodi": "S08E23 S08E02 S06E25 S06E06 S05E02 S08E10 S09E01 S04E12 S04E17 S04E03",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -104,9 +104,9 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V2",
-  "episodi": "S08E23 S08E02 S06E25 S06E06 S05E02 S08E10 S09E01 S04E12 S04E17 S04E03",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V1",
+  "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
   "stato": "Da fare"
  },
  {
@@ -117,7 +117,7 @@
   "formato": "Misteri e teorie",
   "titolo": "Chi ha sparato al signor Burns? Cosa dicono davvero gli indizi",
   "video": "V3",
-  "episodi": "S06E25 S07E01",
+  "episodi": "S06E25 S07E01 S07E10",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -126,9 +126,9 @@
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
-  "titolo": "Short 1 - Gancio: la domanda senza risposta",
+  "titolo": "Short 1 - Gancio sul video 3",
   "video": "V3",
-  "episodi": "S06E25 S07E01",
+  "episodi": "S06E25 S07E01 S07E10",
   "stato": "Da fare"
  },
  {
@@ -136,10 +136,10 @@
   "data": "2026-11-18",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 2 - L'indizio più forte (clip)",
-  "video": "V3",
-  "episodi": "S06E25 S07E01",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -148,9 +148,9 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
-  "titolo": "Short 3 - Regge o non regge? Il verdetto",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V3",
-  "episodi": "S06E25 S07E01",
+  "episodi": "S06E25 S07E01 S07E10",
   "stato": "Da fare"
  },
  {
@@ -158,10 +158,10 @@
   "data": "2026-11-20",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Scontro tra episodi",
-  "titolo": "Due episodi di Natale: quale vince?",
+  "formato": "Vero o falso",
+  "titolo": "La scena con Trump presidente: cosa si vede davvero?",
   "video": "V4",
-  "episodi": "coppia da trovare nell'indice",
+  "episodi": "S11E17",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -169,10 +169,10 @@
   "data": "2026-11-20",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 1 - Round 1: la clip del primo episodio",
+  "formato": "Vero o falso",
+  "titolo": "Short 1 - Gancio sul video 4",
   "video": "V4",
-  "episodi": "coppia da trovare nell'indice",
+  "episodi": "S11E17",
   "stato": "Da fare"
  },
  {
@@ -180,10 +180,10 @@
   "data": "2026-11-21",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 2 - Round 2: la clip del secondo episodio",
+  "formato": "Vero o falso",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V4",
-  "episodi": "coppia da trovare nell'indice",
+  "episodi": "S11E17",
   "stato": "Da fare"
  },
  {
@@ -191,21 +191,21 @@
   "data": "2026-11-22",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 4 - Domanda ai commenti: la tua teoria",
-  "video": "V3",
-  "episodi": "S06E25 S07E01",
+  "formato": "Vero o falso",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V4",
+  "episodi": "S11E17",
   "stato": "Da fare"
  },
  {
   "settimana": 2,
   "data": "2026-11-22",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 3 - Chi vince? Vota nei commenti",
-  "video": "V4",
-  "episodi": "coppia da trovare nell'indice",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -213,10 +213,10 @@
   "data": "2026-11-23",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 4 - Verdetto di Nico",
-  "video": "V4",
-  "episodi": "coppia da trovare nell'indice",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V3",
+  "episodi": "S06E25 S07E01 S07E10",
   "stato": "Da fare"
  },
  {
@@ -224,10 +224,10 @@
   "data": "2026-11-24",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Vero o falso",
-  "titolo": "10 presunte previsioni dei Simpson: quali sono vere?",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Stagione 4: com'era davvero e i suoi 10 migliori episodi",
   "video": "V5",
-  "episodi": "da verificare caso per caso",
+  "episodi": "S04E01-E22",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -235,10 +235,10 @@
   "data": "2026-11-24",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 1 - Vero o falso? Clip 1",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 1 - Gancio sul video 5",
   "video": "V5",
-  "episodi": "da verificare caso per caso",
+  "episodi": "S04E01-E22",
   "stato": "Da fare"
  },
  {
@@ -246,10 +246,10 @@
   "data": "2026-11-25",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 2 - Vero o falso? Clip 2",
-  "video": "V5",
-  "episodi": "da verificare caso per caso",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -257,10 +257,10 @@
   "data": "2026-11-26",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 3 - Il falso più famoso, smontato",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V5",
-  "episodi": "da verificare caso per caso",
+  "episodi": "S04E01-E22",
   "stato": "Da fare"
  },
  {
@@ -268,10 +268,10 @@
   "data": "2026-11-27",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Classifica",
-  "titolo": "I 10 migliori lavori di Homer",
+  "formato": "Vero o falso",
+  "titolo": "10 presunte previsioni dei Simpson: quali sono vere?",
   "video": "V6",
-  "episodi": "da indicizzare",
+  "episodi": "da verificare caso per caso",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -279,10 +279,10 @@
   "data": "2026-11-27",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "formato": "Vero o falso",
+  "titolo": "Short 1 - Gancio sul video 6",
   "video": "V6",
-  "episodi": "da indicizzare",
+  "episodi": "da verificare caso per caso",
   "stato": "Da fare"
  },
  {
@@ -290,20 +290,9 @@
   "data": "2026-11-28",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
-  "video": "V6",
-  "episodi": "da indicizzare",
-  "stato": "Da fare"
- },
- {
-  "settimana": 3,
-  "data": "2026-11-29",
-  "ora": "14:00",
-  "tipo": "Short",
   "formato": "Vero o falso",
-  "titolo": "Short 4 - Domanda ai commenti: quale previsione dubiti?",
-  "video": "V5",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
+  "video": "V6",
   "episodi": "da verificare caso per caso",
   "stato": "Da fare"
  },
@@ -312,10 +301,21 @@
   "data": "2026-11-29",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
+  "formato": "Vero o falso",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
   "video": "V6",
-  "episodi": "da indicizzare",
+  "episodi": "da verificare caso per caso",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 3,
+  "data": "2026-11-29",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -323,10 +323,10 @@
   "data": "2026-11-30",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V6",
-  "episodi": "da indicizzare",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V5",
+  "episodi": "S04E01-E22",
   "stato": "Da fare"
  },
  {
@@ -334,10 +334,10 @@
   "data": "2026-12-01",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Storia di un personaggio",
-  "titolo": "Come è cambiato Homer, dalla stagione 1 a oggi",
+  "formato": "Scontro tra episodi",
+  "titolo": "Treehouse of Horror V contro VI",
   "video": "V7",
-  "episodi": "da indicizzare (prima/dopo)",
+  "episodi": "S06E06 S07E06",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -345,10 +345,10 @@
   "data": "2026-12-01",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 1 - Prima e dopo: stesso personaggio, due stagioni",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 1 - Gancio sul video 7",
   "video": "V7",
-  "episodi": "da indicizzare (prima/dopo)",
+  "episodi": "S06E06 S07E06",
   "stato": "Da fare"
  },
  {
@@ -356,10 +356,10 @@
   "data": "2026-12-02",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 2 - Il momento che lo ha cambiato",
-  "video": "V7",
-  "episodi": "da indicizzare (prima/dopo)",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -367,10 +367,10 @@
   "data": "2026-12-03",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 3 - Quiz: di che stagione è questa scena?",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V7",
-  "episodi": "da indicizzare (prima/dopo)",
+  "episodi": "S06E06 S07E06",
   "stato": "Da fare"
  },
  {
@@ -378,10 +378,10 @@
   "data": "2026-12-04",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Misteri e teorie",
-  "titolo": "Le teorie più folli sui Simpson: regge o non regge?",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Stagione 8: com'era davvero e i suoi 10 migliori episodi",
   "video": "V8",
-  "episodi": "da verificare",
+  "episodi": "S08E01-E25",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -389,10 +389,10 @@
   "data": "2026-12-04",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 1 - Gancio: la domanda senza risposta",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 1 - Gancio sul video 8",
   "video": "V8",
-  "episodi": "da verificare",
+  "episodi": "S08E01-E25",
   "stato": "Da fare"
  },
  {
@@ -400,10 +400,10 @@
   "data": "2026-12-05",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 2 - L'indizio più forte (clip)",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V8",
-  "episodi": "da verificare",
+  "episodi": "S08E01-E25",
   "stato": "Da fare"
  },
  {
@@ -411,21 +411,21 @@
   "data": "2026-12-06",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V7",
-  "episodi": "da indicizzare (prima/dopo)",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V8",
+  "episodi": "S08E01-E25",
   "stato": "Da fare"
  },
  {
   "settimana": 4,
   "data": "2026-12-06",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 3 - Regge o non regge? Il verdetto",
-  "video": "V8",
-  "episodi": "da verificare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -433,10 +433,10 @@
   "data": "2026-12-07",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 4 - Domanda ai commenti: la tua teoria",
-  "video": "V8",
-  "episodi": "da verificare",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V7",
+  "episodi": "S06E06 S07E06",
   "stato": "Da fare"
  },
  {
@@ -444,10 +444,10 @@
   "data": "2026-12-08",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Scontro tra episodi",
-  "titolo": "Bart contro Lisa: due episodi, un verdetto",
+  "formato": "Storia di un personaggio",
+  "titolo": "Ned Flanders: da vicino scocciante a personaggio amatissimo",
   "video": "V9",
-  "episodi": "coppia da trovare",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -455,10 +455,10 @@
   "data": "2026-12-08",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 1 - Round 1: la clip del primo episodio",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 1 - Gancio sul video 9",
   "video": "V9",
-  "episodi": "coppia da trovare",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da fare"
  },
  {
@@ -466,10 +466,10 @@
   "data": "2026-12-09",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 2 - Round 2: la clip del secondo episodio",
-  "video": "V9",
-  "episodi": "coppia da trovare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -477,10 +477,10 @@
   "data": "2026-12-10",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 3 - Chi vince? Vota nei commenti",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V9",
-  "episodi": "coppia da trovare",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da fare"
  },
  {
@@ -488,10 +488,10 @@
   "data": "2026-12-11",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Classifica",
-  "titolo": "Le 10 volte in cui Lisa aveva ragione",
+  "formato": "Storia di un personaggio",
+  "titolo": "Il signor Burns: come il cattivo è diventato un'icona",
   "video": "V10",
-  "episodi": "da indicizzare",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -499,10 +499,10 @@
   "data": "2026-12-11",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 1 - Gancio sul video 10",
   "video": "V10",
-  "episodi": "da indicizzare",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da fare"
  },
  {
@@ -510,10 +510,10 @@
   "data": "2026-12-12",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V10",
-  "episodi": "da indicizzare",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da fare"
  },
  {
@@ -521,21 +521,21 @@
   "data": "2026-12-13",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 4 - Verdetto di Nico",
-  "video": "V9",
-  "episodi": "coppia da trovare",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V10",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da fare"
  },
  {
   "settimana": 5,
   "data": "2026-12-13",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
-  "video": "V10",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -543,10 +543,10 @@
   "data": "2026-12-14",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V10",
-  "episodi": "da indicizzare",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V9",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
   "stato": "Da fare"
  },
  {
@@ -554,21 +554,21 @@
   "data": "2026-12-15",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Easter egg",
-  "titolo": "10 dettagli di sfondo che non avevi notato",
+  "formato": "Classifica",
+  "titolo": "I 10 episodi di Natale dei Simpson",
   "video": "V11",
-  "episodi": "servono fotogrammi",
-  "stato": "Da ricercare"
+  "episodi": "S01E01 S25E08 S32E10 S26E09 S30E10 S22E08 S15E07 S32E16 S09E11 S18E09",
+  "stato": "Da ricercare (indice)"
  },
  {
   "settimana": 6,
   "data": "2026-12-15",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 1 - Zoom sul dettaglio n. 1",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 11",
   "video": "V11",
-  "episodi": "servono fotogrammi",
+  "episodi": "S01E01 S25E08 S32E10 S26E09 S30E10 S22E08 S15E07 S32E16 S09E11 S18E09",
   "stato": "Da fare"
  },
  {
@@ -576,10 +576,10 @@
   "data": "2026-12-16",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 2 - Zoom sul dettaglio n. 2",
-  "video": "V11",
-  "episodi": "servono fotogrammi",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -587,10 +587,10 @@
   "data": "2026-12-17",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 3 - Quiz: dove si nasconde? (fermo immagine)",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V11",
-  "episodi": "servono fotogrammi",
+  "episodi": "S01E01 S25E08 S32E10 S26E09 S30E10 S22E08 S15E07 S32E16 S09E11 S18E09",
   "stato": "Da fare"
  },
  {
@@ -598,10 +598,10 @@
   "data": "2026-12-18",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Stagione 8: perché è considerata la migliore (+ Top 10)",
+  "formato": "Scontro tra episodi",
+  "titolo": "Natale: il primo episodio contro il più natalizio",
   "video": "V12",
-  "episodi": "S08E01-E25",
+  "episodi": "S01E01 S25E08",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -609,10 +609,10 @@
   "data": "2026-12-18",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 1 - L'episodio della stagione in 60 secondi",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 1 - Gancio sul video 12",
   "video": "V12",
-  "episodi": "S08E01-E25",
+  "episodi": "S01E01 S25E08",
   "stato": "Da fare"
  },
  {
@@ -620,10 +620,10 @@
   "data": "2026-12-19",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 2 - Il momento più amato della stagione",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V12",
-  "episodi": "S08E01-E25",
+  "episodi": "S01E01 S25E08",
   "stato": "Da fare"
  },
  {
@@ -631,21 +631,21 @@
   "data": "2026-12-20",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 4 - Il dettaglio che nessuno vede",
-  "video": "V11",
-  "episodi": "servono fotogrammi",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V12",
+  "episodi": "S01E01 S25E08",
   "stato": "Da fare"
  },
  {
   "settimana": 6,
   "data": "2026-12-20",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 3 - Quiz: di che episodio è questa scena?",
-  "video": "V12",
-  "episodi": "S08E01-E25",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -653,10 +653,10 @@
   "data": "2026-12-21",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V12",
-  "episodi": "S08E01-E25",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V11",
+  "episodi": "S01E01 S25E08 S32E10 S26E09 S30E10 S22E08 S15E07 S32E16 S09E11 S18E09",
   "stato": "Da fare"
  },
  {
@@ -665,9 +665,9 @@
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
-  "titolo": "I 10 momenti più assurdi del signor Burns",
+  "titolo": "I 10 migliori episodi del signor Burns",
   "video": "V13",
-  "episodi": "da indicizzare",
+  "episodi": "S02E04 S07E17 S28E12 S07E01 S32E01 S02E22",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -676,9 +676,9 @@
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "titolo": "Short 1 - Gancio sul video 13",
   "video": "V13",
-  "episodi": "da indicizzare",
+  "episodi": "S02E04 S07E17 S28E12 S07E01 S32E01 S02E22",
   "stato": "Da fare"
  },
  {
@@ -686,10 +686,10 @@
   "data": "2026-12-23",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
-  "video": "V13",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -698,9 +698,9 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V13",
-  "episodi": "da indicizzare",
+  "episodi": "S02E04 S07E17 S28E12 S07E01 S32E01 S02E22",
   "stato": "Da fare"
  },
  {
@@ -708,10 +708,10 @@
   "data": "2026-12-25",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Vero o falso",
-  "titolo": "Le 'profezie' su tecnologia e politica: cosa si vede davvero",
+  "formato": "Classifica",
+  "titolo": "I 10 migliori episodi di Moe e della taverna",
   "video": "V14",
-  "episodi": "da verificare",
+  "episodi": "S03E10 S09E17 S18E06 S07E04 S21E21 S29E16",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -719,10 +719,10 @@
   "data": "2026-12-25",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 1 - Vero o falso? Clip 1",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 14",
   "video": "V14",
-  "episodi": "da verificare",
+  "episodi": "S03E10 S09E17 S18E06 S07E04 S21E21 S29E16",
   "stato": "Da fare"
  },
  {
@@ -730,10 +730,10 @@
   "data": "2026-12-26",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 2 - Vero o falso? Clip 2",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V14",
-  "episodi": "da verificare",
+  "episodi": "S03E10 S09E17 S18E06 S07E04 S21E21 S29E16",
   "stato": "Da fare"
  },
  {
@@ -742,20 +742,20 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V13",
-  "episodi": "da indicizzare",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V14",
+  "episodi": "S03E10 S09E17 S18E06 S07E04 S21E21 S29E16",
   "stato": "Da fare"
  },
  {
   "settimana": 7,
   "data": "2026-12-27",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 3 - Il falso più famoso, smontato",
-  "video": "V14",
-  "episodi": "da verificare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -763,10 +763,10 @@
   "data": "2026-12-28",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Vero o falso",
-  "titolo": "Short 4 - Domanda ai commenti: quale previsione dubiti?",
-  "video": "V14",
-  "episodi": "da verificare",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V13",
+  "episodi": "S02E04 S07E17 S28E12 S07E01 S32E01 S02E22",
   "stato": "Da fare"
  },
  {
@@ -774,10 +774,10 @@
   "data": "2026-12-29",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Storia di un personaggio",
-  "titolo": "Ned Flanders: da vicino scocciante a personaggio amatissimo",
+  "formato": "Classifica",
+  "titolo": "I 10 migliori episodi di Ned Flanders",
   "video": "V15",
-  "episodi": "da indicizzare",
+  "episodi": "S05E16 S03E03 S22E22 S11E14 S12E19 S14E13",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -785,10 +785,10 @@
   "data": "2026-12-29",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 1 - Prima e dopo: stesso personaggio, due stagioni",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 15",
   "video": "V15",
-  "episodi": "da indicizzare",
+  "episodi": "S05E16 S03E03 S22E22 S11E14 S12E19 S14E13",
   "stato": "Da fare"
  },
  {
@@ -796,10 +796,10 @@
   "data": "2026-12-30",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 2 - Il momento che lo ha cambiato",
-  "video": "V15",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -807,10 +807,10 @@
   "data": "2026-12-31",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 3 - Quiz: di che stagione è questa scena?",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V15",
-  "episodi": "da indicizzare",
+  "episodi": "S05E16 S03E03 S22E22 S11E14 S12E19 S14E13",
   "stato": "Da fare"
  },
  {
@@ -818,10 +818,10 @@
   "data": "2027-01-01",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Scontro tra episodi",
-  "titolo": "Treehouse of Horror V contro VI: quale fa più paura?",
+  "formato": "Classifica",
+  "titolo": "I 10 migliori episodi di Krusty il clown",
   "video": "V16",
-  "episodi": "S06E06 S05E05 + altri",
+  "episodi": "S07E15 S06E15 S01E12 S04E01 S03E06 S09E16",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -829,10 +829,10 @@
   "data": "2027-01-01",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 1 - Round 1: la clip del primo episodio",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 16",
   "video": "V16",
-  "episodi": "S06E06 S05E05 + altri",
+  "episodi": "S07E15 S06E15 S01E12 S04E01 S03E06 S09E16",
   "stato": "Da fare"
  },
  {
@@ -840,10 +840,10 @@
   "data": "2027-01-02",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 2 - Round 2: la clip del secondo episodio",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V16",
-  "episodi": "S06E06 S05E05 + altri",
+  "episodi": "S07E15 S06E15 S01E12 S04E01 S03E06 S09E16",
   "stato": "Da fare"
  },
  {
@@ -851,21 +851,21 @@
   "data": "2027-01-03",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V15",
-  "episodi": "da indicizzare",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V16",
+  "episodi": "S07E15 S06E15 S01E12 S04E01 S03E06 S09E16",
   "stato": "Da fare"
  },
  {
   "settimana": 8,
   "data": "2027-01-03",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 3 - Chi vince? Vota nei commenti",
-  "video": "V16",
-  "episodi": "S06E06 S05E05 + altri",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -873,10 +873,10 @@
   "data": "2027-01-04",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 4 - Verdetto di Nico",
-  "video": "V16",
-  "episodi": "S06E06 S05E05 + altri",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V15",
+  "episodi": "S05E16 S03E03 S22E22 S11E14 S12E19 S14E13",
   "stato": "Da fare"
  },
  {
@@ -885,9 +885,9 @@
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
-  "titolo": "Treehouse of Horror: i 10 segmenti migliori",
+  "titolo": "Le 10 volte in cui Lisa aveva ragione",
   "video": "V17",
-  "episodi": "S06E06 S05E05 + altri",
+  "episodi": "S07E05 S23E22 S03E01 S08E17 S14E08 S29E02",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -896,9 +896,9 @@
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "titolo": "Short 1 - Gancio sul video 17",
   "video": "V17",
-  "episodi": "S06E06 S05E05 + altri",
+  "episodi": "S07E05 S23E22 S03E01 S08E17 S14E08 S29E02",
   "stato": "Da fare"
  },
  {
@@ -906,10 +906,10 @@
   "data": "2027-01-06",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
-  "video": "V17",
-  "episodi": "S06E06 S05E05 + altri",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -918,9 +918,9 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V17",
-  "episodi": "S06E06 S05E05 + altri",
+  "episodi": "S07E05 S23E22 S03E01 S08E17 S14E08 S29E02",
   "stato": "Da fare"
  },
  {
@@ -928,10 +928,10 @@
   "data": "2027-01-08",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Misteri e teorie",
-  "titolo": "I personaggi spariti dai Simpson: che fine hanno fatto?",
+  "formato": "Classifica",
+  "titolo": "I 10 scherzi migliori di Bart",
   "video": "V18",
-  "episodi": "da indicizzare",
+  "episodi": "S01E02 S09E21 S35E02 S01E05 S02E01 S04E14",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -939,10 +939,10 @@
   "data": "2027-01-08",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 1 - Gancio: la domanda senza risposta",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 18",
   "video": "V18",
-  "episodi": "da indicizzare",
+  "episodi": "S01E02 S09E21 S35E02 S01E05 S02E01 S04E14",
   "stato": "Da fare"
  },
  {
@@ -950,10 +950,10 @@
   "data": "2027-01-09",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 2 - L'indizio più forte (clip)",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V18",
-  "episodi": "da indicizzare",
+  "episodi": "S01E02 S09E21 S35E02 S01E05 S02E01 S04E14",
   "stato": "Da fare"
  },
  {
@@ -962,20 +962,20 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V17",
-  "episodi": "S06E06 S05E05 + altri",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V18",
+  "episodi": "S01E02 S09E21 S35E02 S01E05 S02E01 S04E14",
   "stato": "Da fare"
  },
  {
   "settimana": 9,
   "data": "2027-01-10",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 3 - Regge o non regge? Il verdetto",
-  "video": "V18",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -983,10 +983,10 @@
   "data": "2027-01-11",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 4 - Domanda ai commenti: la tua teoria",
-  "video": "V18",
-  "episodi": "da indicizzare",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V17",
+  "episodi": "S07E05 S23E22 S03E01 S08E17 S14E08 S29E02",
   "stato": "Da fare"
  },
  {
@@ -995,9 +995,9 @@
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
-  "titolo": "Top 10 gag del divano",
+  "titolo": "I 10 migliori lavori di Homer",
   "video": "V19",
-  "episodi": "da indicizzare (sigle)",
+  "episodi": "S06E13 S08E02 S19E01 S26E14 S30E23 S35E11 S36E01 S37E13",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -1006,9 +1006,9 @@
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "titolo": "Short 1 - Gancio sul video 19",
   "video": "V19",
-  "episodi": "da indicizzare (sigle)",
+  "episodi": "S06E13 S08E02 S19E01 S26E14 S30E23 S35E11 S36E01 S37E13",
   "stato": "Da fare"
  },
  {
@@ -1016,10 +1016,10 @@
   "data": "2027-01-13",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
-  "video": "V19",
-  "episodi": "da indicizzare (sigle)",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -1028,9 +1028,9 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V19",
-  "episodi": "da indicizzare (sigle)",
+  "episodi": "S06E13 S08E02 S19E01 S26E14 S30E23 S35E11 S36E01 S37E13",
   "stato": "Da fare"
  },
  {
@@ -1038,10 +1038,10 @@
   "data": "2027-01-15",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Stagione 4: perché tanti la chiamano il picco (+ Top 10)",
+  "formato": "Classifica",
+  "titolo": "I 10 momenti più assurdi con la birra Duff",
   "video": "V20",
-  "episodi": "S04E01-E22",
+  "episodi": "S04E13 S26E17 S04E16 S11E16 S34E07 S14E19",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -1049,10 +1049,10 @@
   "data": "2027-01-15",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 1 - L'episodio della stagione in 60 secondi",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 20",
   "video": "V20",
-  "episodi": "S04E01-E22",
+  "episodi": "S04E13 S26E17 S04E16 S11E16 S34E07 S14E19",
   "stato": "Da fare"
  },
  {
@@ -1060,10 +1060,10 @@
   "data": "2027-01-16",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 2 - Il momento più amato della stagione",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V20",
-  "episodi": "S04E01-E22",
+  "episodi": "S04E13 S26E17 S04E16 S11E16 S34E07 S14E19",
   "stato": "Da fare"
  },
  {
@@ -1072,20 +1072,20 @@
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V19",
-  "episodi": "da indicizzare (sigle)",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V20",
+  "episodi": "S04E13 S26E17 S04E16 S11E16 S34E07 S14E19",
   "stato": "Da fare"
  },
  {
   "settimana": 10,
   "data": "2027-01-17",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 3 - Quiz: di che episodio è questa scena?",
-  "video": "V20",
-  "episodi": "S04E01-E22",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -1093,10 +1093,10 @@
   "data": "2027-01-18",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V20",
-  "episodi": "S04E01-E22",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V19",
+  "episodi": "S06E13 S08E02 S19E01 S26E14 S30E23 S35E11 S36E01 S37E13",
   "stato": "Da fare"
  },
  {
@@ -1104,10 +1104,10 @@
   "data": "2027-01-19",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Storia di un personaggio",
-  "titolo": "Moe e la taverna: l'evoluzione di un perdente",
+  "formato": "Classifica",
+  "titolo": "Treehouse of Horror: i 10 segmenti migliori",
   "video": "V21",
-  "episodi": "da indicizzare",
+  "episodi": "S02E03 S03E07 S04E05 S05E05 S06E06 S07E06 S08E04 S09E04 S10E04 S11E04",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -1115,10 +1115,10 @@
   "data": "2027-01-19",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 1 - Prima e dopo: stesso personaggio, due stagioni",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 21",
   "video": "V21",
-  "episodi": "da indicizzare",
+  "episodi": "S02E03 S03E07 S04E05 S05E05 S06E06 S07E06 S08E04 S09E04 S10E04 S11E04",
   "stato": "Da fare"
  },
  {
@@ -1126,10 +1126,10 @@
   "data": "2027-01-20",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 2 - Il momento che lo ha cambiato",
-  "video": "V21",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -1137,10 +1137,10 @@
   "data": "2027-01-21",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 3 - Quiz: di che stagione è questa scena?",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V21",
-  "episodi": "da indicizzare",
+  "episodi": "S02E03 S03E07 S04E05 S05E05 S06E06 S07E06 S08E04 S09E04 S10E04 S11E04",
   "stato": "Da fare"
  },
  {
@@ -1148,10 +1148,10 @@
   "data": "2027-01-22",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Easter egg",
-  "titolo": "Citazioni di film nascoste: le parodie meglio riuscite",
+  "formato": "Classifica",
+  "titolo": "I 10 momenti più assurdi del signor Burns",
   "video": "V22",
-  "episodi": "da indicizzare",
+  "episodi": "S07E17 S02E04 S28E12 S07E01 S06E25",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -1159,10 +1159,10 @@
   "data": "2027-01-22",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 1 - Zoom sul dettaglio n. 1",
+  "formato": "Classifica",
+  "titolo": "Short 1 - Gancio sul video 22",
   "video": "V22",
-  "episodi": "da indicizzare",
+  "episodi": "S07E17 S02E04 S28E12 S07E01 S06E25",
   "stato": "Da fare"
  },
  {
@@ -1170,10 +1170,10 @@
   "data": "2027-01-23",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 2 - Zoom sul dettaglio n. 2",
+  "formato": "Classifica",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V22",
-  "episodi": "da indicizzare",
+  "episodi": "S07E17 S02E04 S28E12 S07E01 S06E25",
   "stato": "Da fare"
  },
  {
@@ -1181,21 +1181,21 @@
   "data": "2027-01-24",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V21",
-  "episodi": "da indicizzare",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V22",
+  "episodi": "S07E17 S02E04 S28E12 S07E01 S06E25",
   "stato": "Da fare"
  },
  {
   "settimana": 11,
   "data": "2027-01-24",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 3 - Quiz: dove si nasconde? (fermo immagine)",
-  "video": "V22",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -1203,10 +1203,10 @@
   "data": "2027-01-25",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Easter egg",
-  "titolo": "Short 4 - Il dettaglio che nessuno vede",
-  "video": "V22",
-  "episodi": "da indicizzare",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V21",
+  "episodi": "S02E03 S03E07 S04E05 S05E05 S06E06 S07E06 S08E04 S09E04 S10E04 S11E04",
   "stato": "Da fare"
  },
  {
@@ -1214,8 +1214,8 @@
   "data": "2027-01-26",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Classifica",
-  "titolo": "Le 10 volte che Marge ha perso la pazienza",
+  "formato": "Misteri e teorie",
+  "titolo": "Dove si trova Springfield? Tutti gli indizi",
   "video": "V23",
   "episodi": "da indicizzare",
   "stato": "Da ricercare (indice)"
@@ -1225,8 +1225,8 @@
   "data": "2027-01-26",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 1 - Gancio: il numero 1 in 30 secondi (teaser)",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 1 - Gancio sul video 23",
   "video": "V23",
   "episodi": "da indicizzare",
   "stato": "Da fare"
@@ -1236,10 +1236,10 @@
   "data": "2027-01-27",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 2 - Il caso migliore in 45 secondi",
-  "video": "V23",
-  "episodi": "da indicizzare",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -1247,8 +1247,8 @@
   "data": "2027-01-28",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta? (clip originale)",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V23",
   "episodi": "da indicizzare",
   "stato": "Da fare"
@@ -1258,10 +1258,10 @@
   "data": "2027-01-29",
   "ora": "17:00",
   "tipo": "Video",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Stagione 1: com'erano davvero i Simpson all'inizio (+ Top 10)",
+  "formato": "Misteri e teorie",
+  "titolo": "Chi è Mona Simpson? Tutte le sue apparizioni",
   "video": "V24",
-  "episodi": "S01E01-E13",
+  "episodi": "S15E02 S27E13 S33E09 S26E20 S23E16 S29E20",
   "stato": "Da ricercare (indice)"
  },
  {
@@ -1269,10 +1269,10 @@
   "data": "2027-01-29",
   "ora": "19:00",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 1 - L'episodio della stagione in 60 secondi",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 1 - Gancio sul video 24",
   "video": "V24",
-  "episodi": "S01E01-E13",
+  "episodi": "S15E02 S27E13 S33E09 S26E20 S23E16 S29E20",
   "stato": "Da fare"
  },
  {
@@ -1280,10 +1280,10 @@
   "data": "2027-01-30",
   "ora": "18:30",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 2 - Il momento più amato della stagione",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 2 - Il caso migliore in 45 s",
   "video": "V24",
-  "episodi": "S01E01-E13",
+  "episodi": "S15E02 S27E13 S33E09 S26E20 S23E16 S29E20",
   "stato": "Da fare"
  },
  {
@@ -1291,21 +1291,21 @@
   "data": "2027-01-31",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V23",
-  "episodi": "da indicizzare",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V24",
+  "episodi": "S15E02 S27E13 S33E09 S26E20 S23E16 S29E20",
   "stato": "Da fare"
  },
  {
   "settimana": 12,
   "data": "2027-01-31",
-  "ora": "14:00",
+  "ora": "18:30",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 3 - Quiz: di che episodio è questa scena?",
-  "video": "V24",
-  "episodi": "S01E01-E13",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
   "stato": "Da fare"
  },
  {
@@ -1313,10 +1313,10 @@
   "data": "2027-02-01",
   "ora": "14:00",
   "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 4 - Verdetto di Nico + domanda ai commenti",
-  "video": "V24",
-  "episodi": "S01E01-E13",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V23",
+  "episodi": "da indicizzare",
   "stato": "Da fare"
  }
 ]
