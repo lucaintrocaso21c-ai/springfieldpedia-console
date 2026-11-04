@@ -1,0 +1,34 @@
+name: YouTube - controllo chiavi
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Controlla token YouTube e avvisa su Telegram
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.parse
+          def post(u,d):
+              return json.load(urllib.request.urlopen(urllib.request.Request(u,urllib.parse.urlencode(d).encode()),timeout=60))
+          msg=''
+          try:
+              t=post('https://oauth2.googleapis.com/token',{'client_id':os.environ['YT_CLIENT_ID'].strip(),'client_secret':os.environ['YT_CLIENT_SECRET'].strip(),'refresh_token':os.environ['YT_REFRESH_TOKEN'].strip(),'grant_type':'refresh_token'})
+              req=urllib.request.Request('https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true',headers={'Authorization':'Bearer '+t['access_token']})
+              r=json.load(urllib.request.urlopen(req,timeout=60))
+              it=r.get('items',[])
+              msg='YouTube OK. Canale collegato: '+it[0]['snippet']['title'] if it else 'Token valido ma nessun canale trovato su questo account (serve l account del canale).'
+              msg+=' | scope: '+t.get('scope','')
+          except Exception as e:
+              body=''
+              try:body=e.read().decode()[:300]
+              except Exception:pass
+              msg='YouTube ERRORE: '+str(e)[:120]+' '+body
+          print(msg)
+          post('https://api.telegram.org/bot'+os.environ['TG'].strip()+'/sendMessage',{'chat_id':os.environ['CHAT'].strip(),'text':msg})
+          PY
