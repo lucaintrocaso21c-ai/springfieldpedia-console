@@ -110,6 +110,11 @@ def kb_video(k):
     if not v:return kb_menu()
     v=v[0];row=[{'text':('✅ ' if f in v['fasi'] else '⬜ ')+f,'callback_data':'f:%s:%s'%(k,f)} for f in FASI]
     return {'inline_keyboard':[row[:3],row[3:],[{'text':'⬅ Video','callback_data':'c:video'},{'text':'Menu','callback_data':'c:menu'}]]}
+KB_REPLY={'keyboard':[[{'text':'📊 Stato'},{'text':'📅 Prossimo'}],[{'text':'🗓 Settimana'},{'text':'🎬 Video'}],[{'text':'💡 Idee'},{'text':'💶 Costi'}],[{'text':'🔧 Diagnostica'},{'text':'🔔 Avvisi'}],[{'text':'❓ Aiuto'},{'text':'📋 Menu'}]],'resize_keyboard':True,'is_persistent':True}
+LABELS={'stato':'/stato','prossimo':'/prossimo','settimana':'/settimana','video':'/video','idee':'/idee','costi':'/costi','diagnostica':'/diagnostica','avvisi':'/avvisi','aiuto':'/aiuto','menu':'/menu'}
+def tastiera(tg,th):
+    try:tg.send('Tastiera attiva: usa i pulsanti qui sotto.',thread=th,markup=KB_REPLY)
+    except Exception as e:print('tastiera:',e)
 def setup_menu(tg,st):
     if st.get('menu_v')==2:return
     cmds=json.dumps([{'command':c,'description':d} for c,d in COMANDI_MENU])
@@ -147,14 +152,16 @@ def handle(tg,msg,allowed,st):
     u=msg.get('from',{}).get('id');text=(msg.get('text') or '').strip()
     if text.split(' ')[0].split('@')[0].lower()=='/id':
         tg.send('Il tuo ID utente: %s\nID di questa chat: %s'%(u,msg.get('chat',{}).get('id')),thread=msg.get('message_thread_id'),chat=msg.get('chat',{}).get('id'));return
+    parts=text.split(' ',1)
+    if len(parts)==2 and parts[1].strip().lower() in LABELS and not text.startswith('/'):text=LABELS[parts[1].strip().lower()]
     if str(u)!=str(allowed) or not text.startswith('/'):return
     th=msg.get('message_thread_id');cmd,_,rest=text.partition(' ');cmd=cmd.split('@')[0].lower();a=rest.split()
     R={'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
     if cmd=='/qui':
         n=(a[0].lower() if a else '')
         if n not in TOPICS:reply='Uso: /qui nome, dove nome e uno tra: '+', '.join(TOPICS)
-        else:st['topics'][n]=th;tg.send('Argomento "%s" registrato.'%n,thread=th);tg.send('MENU - scegli:',thread=th,markup=kb_menu());return
-    elif cmd in('/menu','/start'):tg.send('MENU - scegli:',thread=th,markup=kb_menu());return
+        else:st['topics'][n]=th;tg.send('Argomento "%s" registrato.'%n,thread=th);tg.send('MENU - scegli:',thread=th,markup=kb_menu());tastiera(tg,th);return
+    elif cmd in('/menu','/start'):tg.send('MENU - scegli:',thread=th,markup=kb_menu());tastiera(tg,th);return
     elif cmd=='/video' and not a:tg.send('Quale video?',thread=th,markup=kb_videos());return
     elif cmd=='/video':tg.send(cmd_video(a),thread=th,markup=kb_video(a[0].upper()));return
     elif cmd=='/fatto':reply=setfase(a,True)
@@ -175,14 +182,14 @@ INTRO=("BENVENUTO NELLA CONSOLE DI SPRINGFIELDPEDIA\n\n"
 "- avvisi: ogni mattina alle 8 il bot scrive cosa e in ritardo o in scadenza e gli Short di domani. /avvisi lo manda subito.\n"
 "- diagnostica: /diagnostica dice se la console funziona e quali argomenti mancano.\n\n"
 "IL MENU\n"
-"Il pulsante Menu accanto alla tastiera elenca tutti i comandi. /menu mostra anche i pulsanti da toccare: Stato, Prossimo, Settimana, Video, Idee, Costi, Diagnostica, Avvisi, Aiuto.\n\n"
+"In fondo allo schermo compare una tastiera con i pulsanti (Stato, Prossimo, Video...): toccali invece di scrivere i comandi. Il pulsante Menu accanto alla tastiera elenca tutti i comandi. /menu mostra anche i pulsanti da toccare: Stato, Prossimo, Settimana, Video, Idee, Costi, Diagnostica, Avvisi, Aiuto.\n\n"
 "Per l'elenco completo scrivi /aiuto. Solo tu puoi comandare il bot.")
 def run(tg,allowed,mode='poll'):
     st=load('state.json',{});st.setdefault('topics',{});n=0
     if mode=='poll':
         setup_menu(tg,st)
-        if st.get('intro_v')!=1:
-            try:tg.send(INTRO,markup=kb_menu());st['intro_v']=1
+        if st.get('intro_v')!=2:
+            try:tg.send(INTRO,markup=kb_menu());tastiera(tg,None);st['intro_v']=2
             except Exception as e:print('intro:',e)
         for up in tg.updates(st.get('offset',0)):
             st['offset']=up['update_id']+1
