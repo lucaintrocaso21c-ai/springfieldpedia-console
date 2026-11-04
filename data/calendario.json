@@ -1,7 +1,7 @@
 [
  {
   "settimana": 1,
-  "data": "2026-11-10",
+  "data": "2026-11-06",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -12,7 +12,7 @@
  },
  {
   "settimana": 1,
-  "data": "2026-11-10",
+  "data": "2026-11-06",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -23,18 +23,7 @@
  },
  {
   "settimana": 1,
-  "data": "2026-11-11",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 1,
-  "data": "2026-11-12",
+  "data": "2026-11-07",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -45,7 +34,40 @@
  },
  {
   "settimana": 1,
-  "data": "2026-11-13",
+  "data": "2026-11-07",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 1,
+  "data": "2026-11-08",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V1",
+  "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 1,
+  "data": "2026-11-09",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 1,
+  "data": "2026-11-10",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -56,7 +78,7 @@
  },
  {
   "settimana": 1,
-  "data": "2026-11-13",
+  "data": "2026-11-10",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -67,8 +89,8 @@
  },
  {
   "settimana": 1,
-  "data": "2026-11-14",
-  "ora": "18:30",
+  "data": "2026-11-11",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -78,7 +100,7 @@
  },
  {
   "settimana": 1,
-  "data": "2026-11-15",
+  "data": "2026-11-12",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -88,30 +110,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 1,
-  "data": "2026-11-15",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 1,
-  "data": "2026-11-16",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V1",
-  "episodi": "S02E15 S04E03 S02E11 S04E09 S07E07 S06E12 S06E09 S03E17 S05E15 S01E01",
-  "stato": "Da fare"
- },
- {
   "settimana": 2,
-  "data": "2026-11-17",
+  "data": "2026-11-13",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Misteri e teorie",
@@ -122,7 +122,7 @@
  },
  {
   "settimana": 2,
-  "data": "2026-11-17",
+  "data": "2026-11-13",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
@@ -133,18 +133,7 @@
  },
  {
   "settimana": 2,
-  "data": "2026-11-18",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 2,
-  "data": "2026-11-19",
+  "data": "2026-11-14",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
@@ -155,7 +144,40 @@
  },
  {
   "settimana": 2,
-  "data": "2026-11-20",
+  "data": "2026-11-14",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 2,
+  "data": "2026-11-15",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V3",
+  "episodi": "S06E25 S07E01 S07E10",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 2,
+  "data": "2026-11-16",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 2,
+  "data": "2026-11-17",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Vero o falso",
@@ -166,7 +188,7 @@
  },
  {
   "settimana": 2,
-  "data": "2026-11-20",
+  "data": "2026-11-17",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Vero o falso",
@@ -177,8 +199,8 @@
  },
  {
   "settimana": 2,
-  "data": "2026-11-21",
-  "ora": "18:30",
+  "data": "2026-11-18",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Vero o falso",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -188,7 +210,7 @@
  },
  {
   "settimana": 2,
-  "data": "2026-11-22",
+  "data": "2026-11-19",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Vero o falso",
@@ -198,30 +220,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 2,
-  "data": "2026-11-22",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 2,
-  "data": "2026-11-23",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V3",
-  "episodi": "S06E25 S07E01 S07E10",
-  "stato": "Da fare"
- },
- {
   "settimana": 3,
-  "data": "2026-11-24",
+  "data": "2026-11-20",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Retrospettiva stagione",
@@ -232,7 +232,7 @@
  },
  {
   "settimana": 3,
-  "data": "2026-11-24",
+  "data": "2026-11-20",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Retrospettiva stagione",
@@ -243,18 +243,7 @@
  },
  {
   "settimana": 3,
-  "data": "2026-11-25",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 3,
-  "data": "2026-11-26",
+  "data": "2026-11-21",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Retrospettiva stagione",
@@ -265,7 +254,40 @@
  },
  {
   "settimana": 3,
-  "data": "2026-11-27",
+  "data": "2026-11-21",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 3,
+  "data": "2026-11-22",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Retrospettiva stagione",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V5",
+  "episodi": "S04E01-E22",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 3,
+  "data": "2026-11-23",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 3,
+  "data": "2026-11-24",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Vero o falso",
@@ -276,7 +298,7 @@
  },
  {
   "settimana": 3,
-  "data": "2026-11-27",
+  "data": "2026-11-24",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Vero o falso",
@@ -287,8 +309,8 @@
  },
  {
   "settimana": 3,
-  "data": "2026-11-28",
-  "ora": "18:30",
+  "data": "2026-11-25",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Vero o falso",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -298,7 +320,7 @@
  },
  {
   "settimana": 3,
-  "data": "2026-11-29",
+  "data": "2026-11-26",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Vero o falso",
@@ -308,30 +330,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 3,
-  "data": "2026-11-29",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 3,
-  "data": "2026-11-30",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Retrospettiva stagione",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V5",
-  "episodi": "S04E01-E22",
-  "stato": "Da fare"
- },
- {
   "settimana": 4,
-  "data": "2026-12-01",
+  "data": "2026-11-27",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Scontro tra episodi",
@@ -342,7 +342,7 @@
  },
  {
   "settimana": 4,
-  "data": "2026-12-01",
+  "data": "2026-11-27",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Scontro tra episodi",
@@ -353,18 +353,7 @@
  },
  {
   "settimana": 4,
-  "data": "2026-12-02",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 4,
-  "data": "2026-12-03",
+  "data": "2026-11-28",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Scontro tra episodi",
@@ -375,7 +364,40 @@
  },
  {
   "settimana": 4,
-  "data": "2026-12-04",
+  "data": "2026-11-28",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 4,
+  "data": "2026-11-29",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Scontro tra episodi",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V7",
+  "episodi": "S06E06 S07E06",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 4,
+  "data": "2026-11-30",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 4,
+  "data": "2026-12-01",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Retrospettiva stagione",
@@ -386,7 +408,7 @@
  },
  {
   "settimana": 4,
-  "data": "2026-12-04",
+  "data": "2026-12-01",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Retrospettiva stagione",
@@ -397,8 +419,8 @@
  },
  {
   "settimana": 4,
-  "data": "2026-12-05",
-  "ora": "18:30",
+  "data": "2026-12-02",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Retrospettiva stagione",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -408,7 +430,7 @@
  },
  {
   "settimana": 4,
-  "data": "2026-12-06",
+  "data": "2026-12-03",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Retrospettiva stagione",
@@ -418,30 +440,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 4,
-  "data": "2026-12-06",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 4,
-  "data": "2026-12-07",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Scontro tra episodi",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V7",
-  "episodi": "S06E06 S07E06",
-  "stato": "Da fare"
- },
- {
   "settimana": 5,
-  "data": "2026-12-08",
+  "data": "2026-12-04",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Storia di un personaggio",
@@ -452,7 +452,7 @@
  },
  {
   "settimana": 5,
-  "data": "2026-12-08",
+  "data": "2026-12-04",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Storia di un personaggio",
@@ -463,18 +463,7 @@
  },
  {
   "settimana": 5,
-  "data": "2026-12-09",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 5,
-  "data": "2026-12-10",
+  "data": "2026-12-05",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Storia di un personaggio",
@@ -485,7 +474,40 @@
  },
  {
   "settimana": 5,
-  "data": "2026-12-11",
+  "data": "2026-12-05",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 5,
+  "data": "2026-12-06",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Storia di un personaggio",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V9",
+  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 5,
+  "data": "2026-12-07",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 5,
+  "data": "2026-12-08",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Storia di un personaggio",
@@ -496,7 +518,7 @@
  },
  {
   "settimana": 5,
-  "data": "2026-12-11",
+  "data": "2026-12-08",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Storia di un personaggio",
@@ -507,8 +529,8 @@
  },
  {
   "settimana": 5,
-  "data": "2026-12-12",
-  "ora": "18:30",
+  "data": "2026-12-09",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Storia di un personaggio",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -518,7 +540,7 @@
  },
  {
   "settimana": 5,
-  "data": "2026-12-13",
+  "data": "2026-12-10",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Storia di un personaggio",
@@ -528,30 +550,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 5,
-  "data": "2026-12-13",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 5,
-  "data": "2026-12-14",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Storia di un personaggio",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V9",
-  "episodi": "S01-S10 vs S11-S20 vs S21-S37",
-  "stato": "Da fare"
- },
- {
   "settimana": 6,
-  "data": "2026-12-15",
+  "data": "2026-12-11",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -562,7 +562,7 @@
  },
  {
   "settimana": 6,
-  "data": "2026-12-15",
+  "data": "2026-12-11",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -573,18 +573,7 @@
  },
  {
   "settimana": 6,
-  "data": "2026-12-16",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 6,
-  "data": "2026-12-17",
+  "data": "2026-12-12",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -595,7 +584,40 @@
  },
  {
   "settimana": 6,
-  "data": "2026-12-18",
+  "data": "2026-12-12",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 6,
+  "data": "2026-12-13",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V11",
+  "episodi": "S01E01 S25E08 S32E10 S26E09 S30E10 S22E08 S15E07 S32E16 S09E11 S18E09",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 6,
+  "data": "2026-12-14",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 6,
+  "data": "2026-12-15",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Scontro tra episodi",
@@ -606,7 +628,7 @@
  },
  {
   "settimana": 6,
-  "data": "2026-12-18",
+  "data": "2026-12-15",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Scontro tra episodi",
@@ -617,8 +639,8 @@
  },
  {
   "settimana": 6,
-  "data": "2026-12-19",
-  "ora": "18:30",
+  "data": "2026-12-16",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Scontro tra episodi",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -628,7 +650,7 @@
  },
  {
   "settimana": 6,
-  "data": "2026-12-20",
+  "data": "2026-12-17",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Scontro tra episodi",
@@ -638,30 +660,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 6,
-  "data": "2026-12-20",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 6,
-  "data": "2026-12-21",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V11",
-  "episodi": "S01E01 S25E08 S32E10 S26E09 S30E10 S22E08 S15E07 S32E16 S09E11 S18E09",
-  "stato": "Da fare"
- },
- {
   "settimana": 7,
-  "data": "2026-12-22",
+  "data": "2026-12-18",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -672,7 +672,7 @@
  },
  {
   "settimana": 7,
-  "data": "2026-12-22",
+  "data": "2026-12-18",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -683,18 +683,7 @@
  },
  {
   "settimana": 7,
-  "data": "2026-12-23",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 7,
-  "data": "2026-12-24",
+  "data": "2026-12-19",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -705,7 +694,40 @@
  },
  {
   "settimana": 7,
-  "data": "2026-12-25",
+  "data": "2026-12-19",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 7,
+  "data": "2026-12-20",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V13",
+  "episodi": "S02E04 S07E17 S28E12 S07E01 S32E01 S02E22",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 7,
+  "data": "2026-12-21",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 7,
+  "data": "2026-12-22",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -716,7 +738,7 @@
  },
  {
   "settimana": 7,
-  "data": "2026-12-25",
+  "data": "2026-12-22",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -727,8 +749,8 @@
  },
  {
   "settimana": 7,
-  "data": "2026-12-26",
-  "ora": "18:30",
+  "data": "2026-12-23",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -738,7 +760,7 @@
  },
  {
   "settimana": 7,
-  "data": "2026-12-27",
+  "data": "2026-12-24",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -748,30 +770,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 7,
-  "data": "2026-12-27",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 7,
-  "data": "2026-12-28",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V13",
-  "episodi": "S02E04 S07E17 S28E12 S07E01 S32E01 S02E22",
-  "stato": "Da fare"
- },
- {
   "settimana": 8,
-  "data": "2026-12-29",
+  "data": "2026-12-25",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -782,7 +782,7 @@
  },
  {
   "settimana": 8,
-  "data": "2026-12-29",
+  "data": "2026-12-25",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -793,18 +793,7 @@
  },
  {
   "settimana": 8,
-  "data": "2026-12-30",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 8,
-  "data": "2026-12-31",
+  "data": "2026-12-26",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -815,7 +804,40 @@
  },
  {
   "settimana": 8,
-  "data": "2027-01-01",
+  "data": "2026-12-26",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 8,
+  "data": "2026-12-27",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V15",
+  "episodi": "S05E16 S03E03 S22E22 S11E14 S12E19 S14E13",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 8,
+  "data": "2026-12-28",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 8,
+  "data": "2026-12-29",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -826,7 +848,7 @@
  },
  {
   "settimana": 8,
-  "data": "2027-01-01",
+  "data": "2026-12-29",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -837,8 +859,8 @@
  },
  {
   "settimana": 8,
-  "data": "2027-01-02",
-  "ora": "18:30",
+  "data": "2026-12-30",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -848,7 +870,7 @@
  },
  {
   "settimana": 8,
-  "data": "2027-01-03",
+  "data": "2026-12-31",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -858,30 +880,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 8,
-  "data": "2027-01-03",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 8,
-  "data": "2027-01-04",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V15",
-  "episodi": "S05E16 S03E03 S22E22 S11E14 S12E19 S14E13",
-  "stato": "Da fare"
- },
- {
   "settimana": 9,
-  "data": "2027-01-05",
+  "data": "2027-01-01",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -892,7 +892,7 @@
  },
  {
   "settimana": 9,
-  "data": "2027-01-05",
+  "data": "2027-01-01",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -903,18 +903,7 @@
  },
  {
   "settimana": 9,
-  "data": "2027-01-06",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 9,
-  "data": "2027-01-07",
+  "data": "2027-01-02",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -925,7 +914,40 @@
  },
  {
   "settimana": 9,
-  "data": "2027-01-08",
+  "data": "2027-01-02",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 9,
+  "data": "2027-01-03",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V17",
+  "episodi": "S07E05 S23E22 S03E01 S08E17 S14E08 S29E02",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 9,
+  "data": "2027-01-04",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 9,
+  "data": "2027-01-05",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -936,7 +958,7 @@
  },
  {
   "settimana": 9,
-  "data": "2027-01-08",
+  "data": "2027-01-05",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -947,8 +969,8 @@
  },
  {
   "settimana": 9,
-  "data": "2027-01-09",
-  "ora": "18:30",
+  "data": "2027-01-06",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -958,7 +980,7 @@
  },
  {
   "settimana": 9,
-  "data": "2027-01-10",
+  "data": "2027-01-07",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -968,30 +990,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 9,
-  "data": "2027-01-10",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 9,
-  "data": "2027-01-11",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V17",
-  "episodi": "S07E05 S23E22 S03E01 S08E17 S14E08 S29E02",
-  "stato": "Da fare"
- },
- {
   "settimana": 10,
-  "data": "2027-01-12",
+  "data": "2027-01-08",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -1002,7 +1002,7 @@
  },
  {
   "settimana": 10,
-  "data": "2027-01-12",
+  "data": "2027-01-08",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1013,18 +1013,7 @@
  },
  {
   "settimana": 10,
-  "data": "2027-01-13",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 10,
-  "data": "2027-01-14",
+  "data": "2027-01-09",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1035,7 +1024,40 @@
  },
  {
   "settimana": 10,
-  "data": "2027-01-15",
+  "data": "2027-01-09",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 10,
+  "data": "2027-01-10",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V19",
+  "episodi": "S06E13 S08E02 S19E01 S26E14 S30E23 S35E11 S36E01 S37E13",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 10,
+  "data": "2027-01-11",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 10,
+  "data": "2027-01-12",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -1046,7 +1068,7 @@
  },
  {
   "settimana": 10,
-  "data": "2027-01-15",
+  "data": "2027-01-12",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1057,8 +1079,8 @@
  },
  {
   "settimana": 10,
-  "data": "2027-01-16",
-  "ora": "18:30",
+  "data": "2027-01-13",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -1068,7 +1090,7 @@
  },
  {
   "settimana": 10,
-  "data": "2027-01-17",
+  "data": "2027-01-14",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1078,30 +1100,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 10,
-  "data": "2027-01-17",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 10,
-  "data": "2027-01-18",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V19",
-  "episodi": "S06E13 S08E02 S19E01 S26E14 S30E23 S35E11 S36E01 S37E13",
-  "stato": "Da fare"
- },
- {
   "settimana": 11,
-  "data": "2027-01-19",
+  "data": "2027-01-15",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -1112,7 +1112,7 @@
  },
  {
   "settimana": 11,
-  "data": "2027-01-19",
+  "data": "2027-01-15",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1123,18 +1123,7 @@
  },
  {
   "settimana": 11,
-  "data": "2027-01-20",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 11,
-  "data": "2027-01-21",
+  "data": "2027-01-16",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1145,7 +1134,40 @@
  },
  {
   "settimana": 11,
-  "data": "2027-01-22",
+  "data": "2027-01-16",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 11,
+  "data": "2027-01-17",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Classifica",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V21",
+  "episodi": "S02E03 S03E07 S04E05 S05E05 S06E06 S07E06 S08E04 S09E04 S10E04 S11E04",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 11,
+  "data": "2027-01-18",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 11,
+  "data": "2027-01-19",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Classifica",
@@ -1156,7 +1178,7 @@
  },
  {
   "settimana": 11,
-  "data": "2027-01-22",
+  "data": "2027-01-19",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1167,8 +1189,8 @@
  },
  {
   "settimana": 11,
-  "data": "2027-01-23",
-  "ora": "18:30",
+  "data": "2027-01-20",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -1178,7 +1200,7 @@
  },
  {
   "settimana": 11,
-  "data": "2027-01-24",
+  "data": "2027-01-21",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Classifica",
@@ -1188,30 +1210,8 @@
   "stato": "Da fare"
  },
  {
-  "settimana": 11,
-  "data": "2027-01-24",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 11,
-  "data": "2027-01-25",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Classifica",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V21",
-  "episodi": "S02E03 S03E07 S04E05 S05E05 S06E06 S07E06 S08E04 S09E04 S10E04 S11E04",
-  "stato": "Da fare"
- },
- {
   "settimana": 12,
-  "data": "2027-01-26",
+  "data": "2027-01-22",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Misteri e teorie",
@@ -1222,7 +1222,7 @@
  },
  {
   "settimana": 12,
-  "data": "2027-01-26",
+  "data": "2027-01-22",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
@@ -1233,18 +1233,7 @@
  },
  {
   "settimana": 12,
-  "data": "2027-01-27",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 12,
-  "data": "2027-01-28",
+  "data": "2027-01-23",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
@@ -1255,7 +1244,40 @@
  },
  {
   "settimana": 12,
-  "data": "2027-01-29",
+  "data": "2027-01-23",
+  "ora": "18:30",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 12,
+  "data": "2027-01-24",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Misteri e teorie",
+  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
+  "video": "V23",
+  "episodi": "da indicizzare",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 12,
+  "data": "2027-01-25",
+  "ora": "14:00",
+  "tipo": "Short",
+  "formato": "Serie di Short",
+  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
+  "video": "SERIE",
+  "episodi": "dall'indice",
+  "stato": "Da fare"
+ },
+ {
+  "settimana": 12,
+  "data": "2027-01-26",
   "ora": "17:00",
   "tipo": "Video",
   "formato": "Misteri e teorie",
@@ -1266,7 +1288,7 @@
  },
  {
   "settimana": 12,
-  "data": "2027-01-29",
+  "data": "2027-01-26",
   "ora": "19:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
@@ -1277,8 +1299,8 @@
  },
  {
   "settimana": 12,
-  "data": "2027-01-30",
-  "ora": "18:30",
+  "data": "2027-01-27",
+  "ora": "14:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
   "titolo": "Short 2 - Il caso migliore in 45 s",
@@ -1288,35 +1310,13 @@
  },
  {
   "settimana": 12,
-  "data": "2027-01-31",
+  "data": "2027-01-28",
   "ora": "14:00",
   "tipo": "Short",
   "formato": "Misteri e teorie",
   "titolo": "Short 3 - Quiz: chi dice questa battuta?",
   "video": "V24",
   "episodi": "S15E02 S27E13 S33E09 S26E20 S23E16 S29E20",
-  "stato": "Da fare"
- },
- {
-  "settimana": 12,
-  "data": "2027-01-31",
-  "ora": "18:30",
-  "tipo": "Short",
-  "formato": "Serie di Short",
-  "titolo": "L'episodio in 60 secondi (episodio da scegliere)",
-  "video": "SERIE",
-  "episodi": "dall'indice",
-  "stato": "Da fare"
- },
- {
-  "settimana": 12,
-  "data": "2027-02-01",
-  "ora": "14:00",
-  "tipo": "Short",
-  "formato": "Misteri e teorie",
-  "titolo": "Short 3 - Quiz: chi dice questa battuta?",
-  "video": "V23",
-  "episodi": "da indicizzare",
   "stato": "Da fare"
  }
 ]
