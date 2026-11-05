@@ -29,7 +29,7 @@ def main():
     man=json.load(open('data/yt_manifest.json'));done=json.load(open('data/yt_done.json')) if os.path.exists('data/yt_done.json') else {}
     limit=int(os.environ.get('MAX_UPLOADS','6'));tk=token();n=0;lines=[]
     for it in man:
-        if it['id'] in done:continue
+        if it['id'] in done or it['id']=='_thumbed':continue
         if n>=limit:break
         p='dl/'+it['file']
         if not os.path.exists(p):lines.append('%s: file mancante'%it['id']);continue
@@ -42,6 +42,13 @@ def main():
                 lines.append('  miniatura: %s'%('ok' if s==200 else 'non impostata (%s)'%s))
         json.dump(done,open('data/yt_done.json','w'),indent=1)
         if err and 'quota' in err.lower():break
+    th=done.setdefault('_thumbed',[])
+    for it in man:
+        if it['id'] in done and it['id'] not in th and it.get('thumb') and os.path.exists('dl/'+it['thumb']):
+            d=open('dl/'+it['thumb'],'rb').read();s,h,b=post('https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId='+done[it['id']],d,{'Authorization':'Bearer '+tk,'Content-Type':'image/jpeg'})
+            lines.append('miniatura %s: %s'%(it['id'],'ok' if s==200 else 'non impostata (%s %s)'%(s,str(b)[:120])))
+            if s==200:th.append(it['id'])
+    json.dump(done,open('data/yt_done.json','w'),indent=1)
     rest=[i['id'] for i in man if i['id'] not in done]
     tg('YouTube upload:\n'+'\n'.join(lines)+('\nDa caricare ancora: '+', '.join(rest) if rest else '\nTutto caricato.'))
 main()
