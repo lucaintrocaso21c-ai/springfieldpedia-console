@@ -2,9 +2,9 @@ name: YouTube upload
 on:
   workflow_dispatch:
     inputs:
-      tag:
-        description: release tag con i file
-        default: v1
+      nota:
+        description: opzionale
+        default: ''
       max:
         description: max upload per run (quota 6/giorno)
         default: '6'
@@ -17,10 +17,12 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-      - name: Scarica file
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh release download "${{ inputs.tag }}" --dir dl --repo "${{ github.repository }}"
+      - name: Scarica file (branch media)
+        run: |
+          git fetch origin media --depth=1
+          git checkout FETCH_HEAD -- dl
+          for f in dl/*.part00; do base="${f%.part00}"; cat "$base".part* > "$base"; rm "$base".part*; done
+          ls -la dl
       - name: Carica su YouTube
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
