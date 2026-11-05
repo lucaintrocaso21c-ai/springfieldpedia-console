@@ -6,7 +6,10 @@ def post(url,data=None,headers=None,method='POST'):
     except urllib.error.HTTPError as e:return e.code,dict(e.headers),e.read()
 def token():
     d=urllib.parse.urlencode(dict(client_id=os.environ['YT_CLIENT_ID'],client_secret=os.environ['YT_CLIENT_SECRET'],refresh_token=os.environ['YT_REFRESH_TOKEN'],grant_type='refresh_token')).encode()
-    s,h,b=post('https://oauth2.googleapis.com/token',d,{'Content-Type':'application/x-www-form-urlencoded'});return json.loads(b)['access_token']
+    s,h,b=post('https://oauth2.googleapis.com/token',d,{'Content-Type':'application/x-www-form-urlencoded'});j=json.loads(b)
+    if 'access_token' not in j:
+        tg('YouTube: rinnovo token fallito: %s / %s'%(j.get('error'),j.get('error_description')));print(j.get('error'),j.get('error_description'));sys.exit(1)
+    return j['access_token']
 def tg(msg):
     try:
         d=urllib.parse.urlencode(dict(chat_id=os.environ['TELEGRAM_CHAT_ID'],text=msg,disable_web_page_preview='true')).encode()
