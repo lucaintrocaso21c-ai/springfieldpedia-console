@@ -1,0 +1,40 @@
+name: YouTube upload
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: release tag con i file
+        default: v1
+      max:
+        description: max upload per run (quota 6/giorno)
+        default: '6'
+permissions:
+  contents: write
+concurrency: yt-upload
+jobs:
+  up:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scarica file
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "${{ inputs.tag }}" --dir dl --repo "${{ github.repository }}"
+      - name: Carica su YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAX_UPLOADS: ${{ inputs.max }}
+        run: python3 tools/yt_upload.py
+      - name: Salva stato
+        if: always()
+        run: |
+          git config user.name "console-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data/yt_done.json || true
+          git commit -m "yt: stato upload" || true
+          git pull --rebase || true
+          git push || true
