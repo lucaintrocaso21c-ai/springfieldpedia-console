@@ -50,5 +50,6 @@ def main():
             if s==200:th.append(it['id'])
     json.dump(done,open('data/yt_done.json','w'),indent=1)
     rest=[i['id'] for i in man if i['id'] not in done]
+    print('\n'.join(lines))
     tg('YouTube upload:\n'+'\n'.join(lines)+('\nDa caricare ancora: '+', '.join(rest) if rest else '\nTutto caricato.'))
 main()
