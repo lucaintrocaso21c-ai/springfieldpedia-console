@@ -1,0 +1,28 @@
+name: Gen voce Gemini
+on:
+  workflow_dispatch:
+    inputs:
+      voice:
+        default: Charon
+      model:
+        default: ''
+permissions:
+  contents: write
+jobs:
+  g:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Genera
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          VOICE: ${{ inputs.voice }}
+          TTS_MODEL: ${{ inputs.model }}
+        run: python3 tools/gen_voice.py
+      - name: Salva su branch media
+        run: |
+          git config user.name console-bot; git config user.email bot@users.noreply.github.com
+          mkdir -p /tmp/o && cp out/*.wav /tmp/o/ 2>/dev/null || true
+          git fetch origin media --depth=1 && git checkout -f FETCH_HEAD
+          mkdir -p voce && cp /tmp/o/*.wav voce/ 2>/dev/null || true
+          git add voce && git commit -m "voce f3" && git push origin HEAD:media || true

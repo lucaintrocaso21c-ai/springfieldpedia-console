@@ -1,0 +1,3 @@
+PROMPT VOICE DESIGN - NICO (Springfieldpedia) - ricostruito il 4 nov 2026 (originale "Nico Springfieldpedia 3" perso)
+Voce maschile italiana di circa 25 anni, accento italiano neutro standard, non regionale. Timbro caldo e leggermente chiaro, tono giovane, energico e simpatico, da youtuber appassionato di cartoni animati. Ritmo naturale e scorrevole (circa 150 parole al minuto), vivace, senza pause lunghe. Ironia leggera, sorriso nella voce, enfasi sulle battute e sui numeri. Dizione chiara.
+Parametri di uso: Gemini 3.8 Flash TTS, Voice Design. Generare in blocchi da 120-200 parole, non oltre (i blocchi lunghi rallentano la voce).
