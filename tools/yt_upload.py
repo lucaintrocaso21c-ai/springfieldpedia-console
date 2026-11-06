@@ -16,7 +16,7 @@ def tg(msg):
         post('https://api.telegram.org/bot%s/sendMessage'%os.environ['TELEGRAM_BOT_TOKEN'].strip(),d)
     except Exception as e:print('tg err',e)
 def upload(tk,it,path):
-    body=dict(snippet=dict(title=it['title'][:100],description=it['description'],tags=it['tags'],categoryId='24',defaultLanguage='it',defaultAudioLanguage='it'),status=dict(privacyStatus='private',publishAt=it['publishAt'],selfDeclaredMadeForKids=False))
+    body=dict(snippet=dict(title=it['title'][:100],description=it['description'],tags=it['tags'],categoryId='24',defaultLanguage='it',defaultAudioLanguage='it'),status=dict(privacyStatus='private',selfDeclaredMadeForKids=False,**({'publishAt':it['publishAt']} if it.get('publishAt') else {})))
     size=os.path.getsize(path)
     s,h,b=post('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status',json.dumps(body).encode(),{'Authorization':'Bearer '+tk,'Content-Type':'application/json; charset=UTF-8','X-Upload-Content-Length':str(size),'X-Upload-Content-Type':'video/mp4'})
     if s!=200:return None,'init %s %s'%(s,b[:300])
@@ -36,7 +36,7 @@ def main():
         vid,err=upload(tk,it,p)
         if not vid:lines.append('ERRORE %s: %s'%(it['id'],err));
         else:
-            n+=1;done[it['id']]=vid;lines.append('OK %s -> https://youtu.be/%s (programmato %s)'%(it['id'],vid,it['publishAt']))
+            n+=1;done[it['id']]=vid;lines.append('OK %s -> https://youtu.be/%s (programmato %s)'%(it['id'],vid,it.get('publishAt','NESSUNO: privato')))
             if it.get('thumb') and os.path.exists('dl/'+it['thumb']):
                 d=open('dl/'+it['thumb'],'rb').read();s,h,b=post('https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId='+vid,d,{'Authorization':'Bearer '+tk,'Content-Type':'image/jpeg'})
                 lines.append('  miniatura: %s'%('ok' if s==200 else 'non impostata (%s)'%s))
