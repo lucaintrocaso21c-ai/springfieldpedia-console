@@ -87,20 +87,26 @@ def cmd_diag():
     mis=[t for t in TOPICS if t not in st.get('topics',{})]
     if mis:s+='\n\nArgomenti non registrati: %s\nScrivi /qui nome dentro ciascun argomento.'%', '.join(mis)
     return s
+def cmd_oggi():
+    t=oggi();cal=load('calendario.json',[]);pr=load('progress.json',{});fatto=pr.get('_fatto',{})
+    ogg=[r for r in cal if r['data']==t.isoformat()]
+    s='OGGI %s\n'%t.strftime('%d/%m')
+    if ogg:s+='\n'.join('%s  %s - %s'%(r['ora'],'VIDEO' if r['tipo']=='Video' else 'Short',r['titolo'][:70]) for r in ogg)
+    else:s+='Niente in uscita oggi.'
+    dom=[r for r in cal if r['data']>t.isoformat()][:1]
+    if dom:s+='\n\nPROSSIMO: %s %s - %s'%(dom[0]['data'][5:],dom[0]['ora'],dom[0]['titolo'][:60])
+    if fatto.get(t.isoformat()):s+='\n\n✅ Segnato come fatto'
+    return s
 def avvisi():
-    t=oggi();vs=videos();out=[]
-    for v in vs:
-        d=dt.date.fromisoformat(v['data']);g=(d-t).days
-        if not v['manca']:continue
-        if g<0:out.append('IN RITARDO (%d gg) %s - %s\n   mancano: %s'%(-g,v['video'],v['titolo'][:60],', '.join(v['manca'])))
-        elif g<=3:out.append('Esce tra %d gg  %s - %s\n   mancano: %s'%(g,v['video'],v['titolo'][:60],', '.join(v['manca'])))
-    sh=[r for r in load('calendario.json',[]) if r['tipo']=='Short' and r['data']==(t+dt.timedelta(days=1)).isoformat()]
-    if sh:out.append('Domani %d Short: '%len(sh)+'; '.join(r['titolo'][:40] for r in sh))
-    return 'AVVISI %s\n'%t.isoformat()+('\n\n'.join(out) if out else 'Tutto a posto: niente in ritardo o in scadenza.')
-COMANDI_MENU=[('menu','Menu con i pulsanti'),('stato','Situazione dei video'),('prossimo','Prossime uscite'),('settimana','Uscite dei prossimi 7 giorni'),('video','Dettaglio di un video'),('idee','Ultime idee'),('costi','Spese'),('diagnostica','Stato della console'),('avvisi','Manda ora gli avvisi'),('aiuto','Elenco comandi')]
+    t=oggi();out=cmd_oggi()
+    if t.weekday()==6:out+='\n\n'+cmd_settimana()
+    return out
+def kb_oggi():
+    return {'inline_keyboard':[[{'text':'✅ Fatto','callback_data':'d:%s'%oggi().isoformat()},{'text':'🗓 Settimana','callback_data':'c:settimana'},{'text':'💡 Idee','callback_data':'c:idee'}]]}
+COMANDI_MENU=[('oggi','Cosa esce oggi e cosa devi fare'),('settimana','Prossimi 7 giorni'),('idee','Le tue idee')]
 def kb_menu():
     B=lambda t,d:{'text':t,'callback_data':d}
-    return {'inline_keyboard':[[B('📊 Stato','c:stato'),B('📅 Prossimo','c:prossimo')],[B('🗓 Settimana','c:settimana'),B('🎬 Video','c:video')],[B('💡 Idee','c:idee'),B('💶 Costi','c:costi')],[B('🔧 Diagnostica','c:diag'),B('🔔 Avvisi','c:avvisi')],[B('❓ Aiuto','c:aiuto')]]}
+    return {'inline_keyboard':[[B('📌 Oggi','c:oggi'),B('🗓 Settimana','c:settimana'),B('💡 Idee','c:idee')]]}
 def kb_videos():
     vs=[v for v in videos() if v['data']>=oggi().isoformat() or v['manca']][:8]
     rows=[[{'text':'%s %s - %s'%(v['video'],v['data'][5:],v['titolo'][:28]),'callback_data':'v:'+v['video']}] for v in vs]
@@ -110,27 +116,30 @@ def kb_video(k):
     if not v:return kb_menu()
     v=v[0];row=[{'text':('✅ ' if f in v['fasi'] else '⬜ ')+f,'callback_data':'f:%s:%s'%(k,f)} for f in FASI]
     return {'inline_keyboard':[row[:3],row[3:],[{'text':'⬅ Video','callback_data':'c:video'},{'text':'Menu','callback_data':'c:menu'}]]}
-KB_REPLY={'keyboard':[[{'text':'📊 Stato'},{'text':'📅 Prossimo'}],[{'text':'🗓 Settimana'},{'text':'🎬 Video'}],[{'text':'💡 Idee'},{'text':'💶 Costi'}],[{'text':'🔧 Diagnostica'},{'text':'🔔 Avvisi'}],[{'text':'❓ Aiuto'},{'text':'📋 Menu'}]],'resize_keyboard':True,'is_persistent':True}
-LABELS={'stato':'/stato','prossimo':'/prossimo','settimana':'/settimana','video':'/video','idee':'/idee','costi':'/costi','diagnostica':'/diagnostica','avvisi':'/avvisi','aiuto':'/aiuto','menu':'/menu'}
+KB_REPLY={'keyboard':[[{'text':'📌 Oggi'},{'text':'🗓 Settimana'},{'text':'💡 Idee'}]],'resize_keyboard':True,'is_persistent':True}
+LABELS={'oggi':'/oggi','stato':'/stato','prossimo':'/prossimo','settimana':'/settimana','video':'/video','idee':'/idee','costi':'/costi','diagnostica':'/diagnostica','avvisi':'/avvisi','aiuto':'/aiuto','menu':'/menu'}
 def tastiera(tg,th):
     try:tg.send('Tastiera attiva: usa i pulsanti qui sotto.',thread=th,markup=KB_REPLY)
     except Exception as e:print('tastiera:',e)
 def setup_menu(tg,st):
-    if st.get('menu_v')==2:return
+    if st.get('menu_v')==3:return
     cmds=json.dumps([{'command':c,'description':d} for c,d in COMANDI_MENU])
     try:
         for sc in ('default','all_private_chats','all_group_chats','all_chat_administrators'):
             tg.call('setMyCommands',commands=cmds,scope=json.dumps({'type':sc}))
         tg.call('setChatMenuButton',menu_button=json.dumps({'type':'commands'}))
-        st['menu_v']=2
+        st['menu_v']=3
     except Exception as e:print('setup_menu:',e)
 def dispatch_cb(data):
     p=data.split(':')
     if p[0]=='c':
         k=p[1]
         if k=='menu':return 'MENU - scegli:',kb_menu()
+        if k=='oggi':return cmd_oggi(),kb_oggi()
         if k=='video':return 'Quale video?',kb_videos()
         return {'stato':cmd_stato,'prossimo':cmd_prossimo,'settimana':cmd_settimana,'idee':cmd_idee,'costi':cmd_costi,'diag':cmd_diag,'avvisi':avvisi,'aiuto':cmd_aiuto}[k](),kb_menu()
+    if p[0]=='d':
+        pr=load('progress.json',{});pr.setdefault('_fatto',{})[p[1]]=True;save('progress.json',pr);return 'Fatto, segnato per oggi.',kb_menu()
     if p[0]=='v':return cmd_video([p[1]]),kb_video(p[1])
     if p[0]=='f':
         k,f=p[1],p[2];v=[x for x in videos() if x['video']==k]
@@ -161,7 +170,7 @@ def handle(tg,msg,allowed,st):
     if len(parts)==2 and parts[1].strip().lower() in LABELS and not text.startswith('/'):text=LABELS[parts[1].strip().lower()]
     if str(u)!=str(allowed) or not text.startswith('/'):return
     th=msg.get('message_thread_id');cmd,_,rest=text.partition(' ');cmd=cmd.split('@')[0].lower();a=rest.split()
-    R={'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
+    R={'/oggi':cmd_oggi,'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
     if cmd=='/qui':
         n=(a[0].lower() if a else '')
         if n not in TOPICS:reply='Uso: /qui nome, dove nome e uno tra: '+', '.join(TOPICS)
@@ -176,25 +185,13 @@ def handle(tg,msg,allowed,st):
     elif cmd in R:reply=R[cmd]()
     else:reply='Comando sconosciuto. Scrivi /aiuto.'
     tg.send(reply,thread=th)
-INTRO=("BENVENUTO NELLA CONSOLE DI SPRINGFIELDPEDIA\n\n"
-"Questo gruppo e il pannello di controllo del canale. Il bot controlla i messaggi ogni 10 minuti circa, quindi le risposte non sono istantanee.\n\n"
-"COME PARTIRE (una volta sola)\n"
-"Dentro ogni argomento scrivi /qui nome (comandi, idee, gestione, avvisi, diagnostica). Il bot lo registra e ti mostra il menu.\n\n"
-"GLI ARGOMENTI\n"
-"- comandi: il telecomando. /menu apre i pulsanti, /stato mostra i video, /prossimo le prossime uscite, /settimana i 7 giorni, /video V1 il dettaglio.\n"
-"- idee: scrivi /idea testo per salvare un'idea al volo, /idee per rileggere le ultime 10.\n"
-"- gestione: avanzamento e spese. /fatto V1 voce segna una fase fatta (script, voce, montaggio, miniatura, upload), /annulla la toglie, /costo 1.5 nota registra una spesa, /costi il totale. Nel menu Video trovi gli stessi segni con un tocco.\n"
-"- avvisi: ogni mattina alle 8 il bot scrive cosa e in ritardo o in scadenza e gli Short di domani. /avvisi lo manda subito.\n"
-"- diagnostica: /diagnostica dice se la console funziona e quali argomenti mancano.\n\n"
-"IL MENU\n"
-"In fondo allo schermo compare una tastiera con i pulsanti (Stato, Prossimo, Video...): toccali invece di scrivere i comandi. Il pulsante Menu accanto alla tastiera elenca tutti i comandi. /menu mostra anche i pulsanti da toccare: Stato, Prossimo, Settimana, Video, Idee, Costi, Diagnostica, Avvisi, Aiuto.\n\n"
-"Per l'elenco completo scrivi /aiuto. Solo tu puoi comandare il bot.")
+INTRO=("CONSOLE SPRINGFIELDPEDIA\n\nOgni mattina alle 8 ricevi un solo messaggio: cosa esce oggi e cosa devi fare. Il resto e nei 3 pulsanti: Oggi, Settimana, Idee. /idea testo salva un'idea.")
 def run(tg,allowed,mode='poll'):
     st=load('state.json',{});st.setdefault('topics',{});n=0
     if mode=='poll':
         setup_menu(tg,st)
-        if st.get('intro_v')!=2:
-            try:tg.send(INTRO,markup=kb_menu());tastiera(tg,None);st['intro_v']=2
+        if st.get('intro_v')!=3:
+            try:tg.send(INTRO,markup=kb_menu());tastiera(tg,None);st['intro_v']=3
             except Exception as e:print('intro:',e)
         import time
         fine=time.time()+int(os.environ.get('LOOP_SECONDS') or 0)
@@ -212,7 +209,7 @@ def run(tg,allowed,mode='poll'):
                 save('state.json',st)
             if time.time()>=fine:break
     if mode=='avvisi':
-        a=avvisi();tg.send(a,thread=st['topics'].get('avvisi'));st['last_alert']=dt.datetime.now().isoformat(timespec='minutes')
+        a=avvisi();tg.send(a,thread=st['topics'].get('avvisi'),markup=kb_oggi());st['last_alert']=dt.datetime.now().isoformat(timespec='minutes')
     st['last_run']=dt.datetime.now().isoformat(timespec='minutes');st['runs']=st.get('runs',0)+1;st['processed']=st.get('processed',0)+n;save('state.json',st);return n
 if __name__=='__main__':
     tok=os.environ.get('TELEGRAM_BOT_TOKEN');chat=os.environ.get('TELEGRAM_CHAT_ID');al=(os.environ.get('ALLOWED_USER_ID') or '').strip()
