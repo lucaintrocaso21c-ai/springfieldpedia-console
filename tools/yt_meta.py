@@ -9,6 +9,7 @@ T={'V1b':['homer simpson','classifica simpson','migliori scene simpson','follie 
 'F3':['i simpson prevedono il futuro','previsioni simpson avverate','simpson previsioni','simpson previsioni 2026','simpson previsioni 2027','simpson trump','simpson profezie'],
 'F4':['moe szyslak','storia di moe','moe simpson','personaggi simpson','simpson curiosità personaggi'],
 'R4':['simpson stagione 4','simpson stagione 4 episodi','migliori episodi dei simpson','retrospettiva simpson','classifica simpson'],
+'V1':['springfieldpedia','simpson curiosità','simpson dietro le quinte','simpson episodi','nico springfieldpedia'],
 'C1':['last exit to springfield','marge contro la monorotaia','marge vs the monorail','miglior episodio simpson','simpson stagione 4','scontro tra episodi']}
 HT={'V1b':'#Classifica','M1':'#MisteriSimpson','F3':'#PrevisioniSimpson','F4':'#StoriaDiUnPersonaggio','R4':'#Stagione4','C1':'#ScontroTraEpisodi'}
 LONG=['V1b','M1','F3','F4','R4','C1']
@@ -24,6 +25,7 @@ for k,vid in done.items():
     for t in BASE+(T.get(k) or SH)+tags:
         if t.lower() not in [x.lower() for x in new]:new.append(t)
     while sum(len(x)+1 for x in new)>450:new.pop()
+    d=re.sub(r'Due video a settimana, martedì e venerdì alle 17:00, più Short ogni giorno\.?','3 video a settimana e uno Short al giorno.',d)
     d=re.sub(r'Nuovi video ogni martedì e venerdì alle 17:00\.?',NEW,d)
     d=re.sub(r'Su Springfieldpedia escono [^\n]*',NEW,d) if 'Guarda anche' not in d and k in LONG else d
     if k in LONG and 'Guarda anche' not in d:
