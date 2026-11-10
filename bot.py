@@ -29,11 +29,13 @@ def videos():
 def fmtv(v):
     done=''.join('x' if f in v['fasi'] else '-' for f in FASI)
     return '%s  %s %s  [%s]\n   %s'%(v['video'],v['data'][5:],v['ora'],done,v['titolo'])
+def cmd_copertine():
+    return 'COPERTINE NON CARICATE (varianti A/B/C di ogni video)\nhttps://github.com/lucaintrocaso21c-ai/springfieldpedia-console/tree/main/covers\n(repository privato: apri il link da loggato su GitHub)'
 def cmd_aiuto():
     return ("COMANDI\n/stato - situazione dei video\n/prossimo - prossime uscite\n/settimana - uscite dei prossimi 7 giorni\n"
     "/video V3 - dettaglio di un video\n/fatto V3 voce - segna una fase fatta (script, voce, montaggio, miniatura, upload)\n"
     "/annulla V3 voce - toglie la fase\n/idea testo - salva un'idea\n/idee - ultime 10 idee\n/costo 1.5 nota - registra una spesa\n/costi - totale spese\n"
-    "/diagnostica - stato della console\n/id - mostra ID utente e ID chat (serve solo all'installazione)\n/avvisi - manda ora il riepilogo avvisi\n/qui nome - registra questo argomento (%s)\n\nLe fasi nello stato: %s"%(', '.join(TOPICS),' '.join(FASI)))
+    "/diagnostica - stato della console\n/id - mostra ID utente e ID chat (serve solo all'installazione)\n/avvisi - manda ora il riepilogo avvisi\n/copertine - link alla cartella con le copertine non caricate\n/qui nome - registra questo argomento (%s)\n\nLe fasi nello stato: %s"%(', '.join(TOPICS),' '.join(FASI)))
 def cmd_stato():
     vs=videos();t=oggi();ok=sum(1 for v in vs if not v['manca']);rit=[v for v in vs if v['data']<t.isoformat() and v['manca']]
     nxt=[v for v in vs if v['data']>=t.isoformat()][:3]
@@ -117,7 +119,7 @@ def kb_video(k):
     v=v[0];row=[{'text':('✅ ' if f in v['fasi'] else '⬜ ')+f,'callback_data':'f:%s:%s'%(k,f)} for f in FASI]
     return {'inline_keyboard':[row[:3],row[3:],[{'text':'⬅ Video','callback_data':'c:video'},{'text':'Menu','callback_data':'c:menu'}]]}
 KB_REPLY={'keyboard':[[{'text':'📌 Oggi'},{'text':'🗓 Settimana'},{'text':'💡 Idee'}]],'resize_keyboard':True,'is_persistent':True}
-LABELS={'oggi':'/oggi','stato':'/stato','prossimo':'/prossimo','settimana':'/settimana','video':'/video','idee':'/idee','costi':'/costi','diagnostica':'/diagnostica','avvisi':'/avvisi','aiuto':'/aiuto','menu':'/menu'}
+LABELS={'oggi':'/oggi','stato':'/stato','prossimo':'/prossimo','settimana':'/settimana','video':'/video','idee':'/idee','costi':'/costi','diagnostica':'/diagnostica','avvisi':'/avvisi','copertine':'/copertine','aiuto':'/aiuto','menu':'/menu'}
 def tastiera(tg,th):
     try:tg.send('Tastiera attiva: usa i pulsanti qui sotto.',thread=th,markup=KB_REPLY)
     except Exception as e:print('tastiera:',e)
@@ -170,7 +172,7 @@ def handle(tg,msg,allowed,st):
     if len(parts)==2 and parts[1].strip().lower() in LABELS and not text.startswith('/'):text=LABELS[parts[1].strip().lower()]
     if str(u)!=str(allowed) or not text.startswith('/'):return
     th=msg.get('message_thread_id');cmd,_,rest=text.partition(' ');cmd=cmd.split('@')[0].lower();a=rest.split()
-    R={'/oggi':cmd_oggi,'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
+    R={'/oggi':cmd_oggi,'/copertine':cmd_copertine,'/aiuto':cmd_aiuto,'/stato':cmd_stato,'/prossimo':cmd_prossimo,'/settimana':cmd_settimana,'/idee':cmd_idee,'/costi':cmd_costi,'/diagnostica':cmd_diag,'/avvisi':avvisi}
     if cmd=='/qui':
         n=(a[0].lower() if a else '')
         if n not in TOPICS:reply='Uso: /qui nome, dove nome e uno tra: '+', '.join(TOPICS)
