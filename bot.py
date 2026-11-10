@@ -30,7 +30,7 @@ def fmtv(v):
     done=''.join('x' if f in v['fasi'] else '-' for f in FASI)
     return '%s  %s %s  [%s]\n   %s'%(v['video'],v['data'][5:],v['ora'],done,v['titolo'])
 def cmd_copertine():
-    return 'COPERTINE NON CARICATE (varianti A/B/C di ogni video)\nhttps://github.com/lucaintrocaso21c-ai/springfieldpedia-console/tree/main/covers\n(repository privato: apri il link da loggato su GitHub)'
+    return 'COPERTINE NON CARICATE (varianti A/B/C di ogni video)\nhttps://github.com/lucaintrocaso21c-ai/springfieldpedia-console/tree/main/covers'
 def cmd_aiuto():
     return ("COMANDI\n/stato - situazione dei video\n/prossimo - prossime uscite\n/settimana - uscite dei prossimi 7 giorni\n"
     "/video V3 - dettaglio di un video\n/fatto V3 voce - segna una fase fatta (script, voce, montaggio, miniatura, upload)\n"
