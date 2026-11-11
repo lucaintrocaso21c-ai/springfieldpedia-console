@@ -16,13 +16,18 @@ for v in 'ABC':
     pf=os.path.join(d,'prompt_%s.txt'%v)
     if not os.path.exists(pf):continue
     prompt=open(pf,encoding='utf-8').read().strip()
-    try:
-        if refs:
-            r=cl.images.edit(model='gpt-image-1',image=[open(p,'rb') for p in refs],prompt=prompt,size='1536x1024',quality='high')
-        else:
-            r=cl.images.generate(model='gpt-image-1',prompt=prompt,size='1536x1024',quality='high')
-    except Exception as e:
-        print('ERRORE variante',v,str(e)[:400]);open(os.path.join(d,'errore_%s.txt'%v),'w').write(str(e));continue
+    r=None;err=''
+    for mod in os.environ.get('COVER_MODELS','gpt-image-2,gpt-image-1.5,gpt-image-1').split(','):
+        try:
+            if refs:
+                r=cl.images.edit(model=mod,image=[open(p,'rb') for p in refs],prompt=prompt,size='1536x1024',quality='high')
+            else:
+                r=cl.images.generate(model=mod,prompt=prompt,size='1536x1024',quality='high')
+            print('modello',mod);break
+        except Exception as e:
+            err+='%s: %s\n'%(mod,str(e)[:300]);print('ERRORE',v,mod,str(e)[:300])
+    if r is None:
+        open(os.path.join(d,'errore_%s.txt'%v),'w').write(err);continue
     im=Image.open(io.BytesIO(base64.b64decode(r.data[0].b64_json))).convert('RGB')
     w,h=im.size;th=int(w*9/16);top=(h-th)//2
     im=im.crop((0,top,w,top+th)).resize((1280,720),Image.LANCZOS)

@@ -1,1 +1,0 @@
-Error code: 400 - The model 'gpt-image-1' does not exist.
