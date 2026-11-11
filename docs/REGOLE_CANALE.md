@@ -20,6 +20,6 @@ Fonte: docs/piano/Piano_editoriale_30_giorni.xlsx (foglio Regole operative). Sos
 - Video lunghi almeno 8:00; Short 20-59 s (base di test 25-45 s).
 - Mai indicare nel parlato o nella descrizione giorni di uscita o numero di video.
 - Voce di Nico: Voice Design (docs/PROCEDURA_VOCE_NICO.md). Pose: brand/08_Definitivo_v3.
-- Upload sempre privato con publishAt (ora predefinita 17:00 Italia, da rivedere col report "quando i tuoi spettatori sono su YouTube").
+- Upload sempre privato con publishAt (ora: 18:00 Italia nei giorni feriali, 10:00 sabato e domenica, da rivedere col report "quando i tuoi spettatori sono su YouTube").
 - Copertine sempre A/B/C, generate con OpenAI (secret OPENAI_API_KEY su GitHub).
 - Prima di ogni blocco di 5 video: usare la scheda di ricerca (docs/piano/Research_primi_5_video.xlsx) per decidere struttura, hook, titolo, miniatura, SEO.

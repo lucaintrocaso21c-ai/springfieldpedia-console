@@ -1,13 +1,13 @@
 [
  {
   "data": "2026-11-12",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Mistero / indagine",
   "titolo": "CHI HA SPARATO A BURNS? Tutti gli indizi che non avevi notato",
   "video": "L01",
   "episodi": "S06E25; S07E01 (S07E10 solo se utile al contesto)",
-  "stato": "Da approvare",
+  "stato": "Caricato (privato, programmato)",
   "settimana": 1,
   "hook": "Tutti ricordano il colpo di scena. Ma quanti indizi erano davvero davanti agli spettatori?",
   "miniatura": "Nico scioccato + Burns in ombra + pistola; testo: «CHI È STATO?»",
@@ -17,7 +17,7 @@
  },
  {
   "data": "2026-11-13",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Il personaggio dei Simpson che è sparito più a lungo",
@@ -34,7 +34,7 @@
  },
  {
   "data": "2026-11-14",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Video",
   "formato": "Previsione verificata",
   "titolo": "I Simpson avevano previsto Trump? La scena completa e cosa dice davvero",
@@ -50,7 +50,7 @@
  },
  {
   "data": "2026-11-15",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Vero o falso: questa scena di Trump è davvero nei Simpson?",
@@ -67,7 +67,7 @@
  },
  {
   "data": "2026-11-16",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Personaggi / destino",
   "titolo": "Che fine hanno fatto i personaggi dimenticati dei Simpson?",
@@ -83,7 +83,7 @@
  },
  {
   "data": "2026-11-17",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Indovina l'episodio da una sola battuta",
@@ -100,7 +100,7 @@
  },
  {
   "data": "2026-11-18",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Timeline personaggio",
   "titolo": "La storia completa di Telespalla Bob: ogni piano, ritorno e sconfitta",
@@ -116,7 +116,7 @@
  },
  {
   "data": "2026-11-19",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Il dettaglio che cambia il mistero di Burns",
@@ -133,7 +133,7 @@
  },
  {
   "data": "2026-11-20",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Opinione / confronto",
   "titolo": "I Simpson sono peggiorati? Il confronto tra epoca d'oro e stagioni recenti",
@@ -149,7 +149,7 @@
  },
  {
   "data": "2026-11-21",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "La battuta più iconica di Telespalla Bob",
@@ -166,7 +166,7 @@
  },
  {
   "data": "2026-11-22",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Video",
   "formato": "Retrospettiva stagione",
   "titolo": "La stagione 4 dei Simpson è davvero una delle migliori? La riguardiamo oggi",
@@ -182,7 +182,7 @@
  },
  {
   "data": "2026-11-23",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "La scena più controversa tra Homer e Bart",
@@ -199,7 +199,7 @@
  },
  {
   "data": "2026-11-24",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Classifica / speciale stagionale",
   "titolo": "Treehouse of Horror: i segmenti più inquietanti e quelli più geniali",
@@ -215,7 +215,7 @@
  },
  {
   "data": "2026-11-25",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Treehouse: il segmento più inquietante in 30 secondi",
@@ -232,7 +232,7 @@
  },
  {
   "data": "2026-11-26",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Conteggio / statistica",
   "titolo": "Quante volte muoiono i personaggi nei Treehouse of Horror? Il conteggio",
@@ -248,7 +248,7 @@
  },
  {
   "data": "2026-11-27",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Homer classico o Homer moderno?",
@@ -265,7 +265,7 @@
  },
  {
   "data": "2026-11-28",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Video",
   "formato": "Evoluzione personaggio",
   "titolo": "Come è cambiato Homer Simpson in 37 stagioni?",
@@ -281,7 +281,7 @@
  },
  {
   "data": "2026-11-29",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Il momento più crudele del signor Burns",
@@ -298,7 +298,7 @@
  },
  {
   "data": "2026-11-30",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Storia personaggio",
   "titolo": "Il signor Burns: da magnate crudele a icona dei Simpson",
@@ -314,7 +314,7 @@
  },
  {
   "data": "2026-12-01",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Dove pensi che si trovi Springfield?",
@@ -331,7 +331,7 @@
  },
  {
   "data": "2026-12-02",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Mistero / geografia",
   "titolo": "Dove si trova Springfield? Gli indizi che si contraddicono",
@@ -347,7 +347,7 @@
  },
  {
   "data": "2026-12-03",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Il gadget dei Simpson che oggi sembra normale",
@@ -364,7 +364,7 @@
  },
  {
   "data": "2026-12-04",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Previsioni / tecnologia",
   "titolo": "La tecnologia nei Simpson: cosa hanno immaginato prima che esistesse?",
@@ -380,7 +380,7 @@
  },
  {
   "data": "2026-12-05",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Ned Flanders quando perde la pazienza",
@@ -397,7 +397,7 @@
  },
  {
   "data": "2026-12-06",
-  "ora": "17:00",
+  "ora": "10:00",
   "tipo": "Video",
   "formato": "Evoluzione personaggio",
   "titolo": "Ned Flanders: come è passato da vicino perfetto a personaggio complesso",
@@ -413,7 +413,7 @@
  },
  {
   "data": "2026-12-07",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "La volta in cui Lisa aveva ragione",
@@ -430,7 +430,7 @@
  },
  {
   "data": "2026-12-08",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Classifica con tesi",
   "titolo": "Le 10 volte in cui Lisa aveva ragione… e nessuno l'ha ascoltata",
@@ -446,7 +446,7 @@
  },
  {
   "data": "2026-12-09",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "Il lavoro più assurdo di Homer",
@@ -463,7 +463,7 @@
  },
  {
   "data": "2026-12-10",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Video",
   "formato": "Conteggio / classifica",
   "titolo": "I lavori più assurdi di Homer: quanti ne ha fatti davvero?",
@@ -479,7 +479,7 @@
  },
  {
   "data": "2026-12-11",
-  "ora": "17:00",
+  "ora": "18:00",
   "tipo": "Short",
   "formato": "Short autonomo",
   "titolo": "La scena di Maggie che pochi ricordano",
