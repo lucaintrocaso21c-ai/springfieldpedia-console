@@ -2,14 +2,14 @@ import json,os,sys,re
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 from yt_upload import post,token,tg
 done=json.load(open('data/yt_done.json'));tk=token();H={'Authorization':'Bearer '+tk,'Content-Type':'application/json'}
-BASE=['i simpson','simpson','springfieldpedia']
+BASE=['simpsonspedia','i simpson','simpson']
 SH=['shorts simpson','curiosità simpson','lo sapevi','i simpson curiosità']
 T={'V1b':['homer simpson','classifica simpson','migliori scene simpson','follie di homer','top 10 simpson'],
 'M1':['chi ha sparato al signor burns','who shot mr burns','simpson misteri','teorie simpson','simpson spiegazione','mr burns simpson'],
 'F3':['i simpson prevedono il futuro','previsioni simpson avverate','simpson previsioni','simpson previsioni 2026','simpson previsioni 2027','simpson trump','simpson profezie'],
 'F4':['moe szyslak','storia di moe','moe simpson','personaggi simpson','simpson curiosità personaggi'],
 'R4':['simpson stagione 4','simpson stagione 4 episodi','migliori episodi dei simpson','retrospettiva simpson','classifica simpson'],
-'V1':['springfieldpedia','simpson curiosità','simpson dietro le quinte','simpson episodi','nico springfieldpedia'],
+'V1':['simpsonspedia','simpson curiosità','simpson dietro le quinte','simpson episodi','nico simpsonspedia'],
 'C1':['last exit to springfield','marge contro la monorotaia','marge vs the monorail','miglior episodio simpson','simpson stagione 4','scontro tra episodi']}
 HT={'V1b':'#Classifica','M1':'#MisteriSimpson','F3':'#PrevisioniSimpson','F4':'#StoriaDiUnPersonaggio','R4':'#Stagione4','C1':'#ScontroTraEpisodi'}
 LONG=['V1b','M1','F3','F4','R4','C1']
@@ -26,14 +26,17 @@ for k,vid in done.items():
         if t.lower() not in [x.lower() for x in new]:new.append(t)
     while sum(len(x)+1 for x in new)>450:new.pop()
     d=re.sub(r'Due video a settimana, martedì e venerdì alle 17:00, più Short ogni giorno\.?','3 video a settimana e uno Short al giorno.',d)
+    d=re.sub(r'(?i)springfieldpedia','SimpsonsPedia',d)
+    new=[x for x in new if x.lower()!='springfieldpedia']
     d=re.sub(r'Nuovi video ogni martedì e venerdì alle 17:00\.?',NEW,d)
-    d=re.sub(r'Su Springfieldpedia escono [^\n]*',NEW,d) if 'Guarda anche' not in d and k in LONG else d
+    d=re.sub(r'(?i)Su (?:Springfield|Simpsons)[Pp]edia escono [^\n]*',NEW,d) if 'Guarda anche' not in d and k in LONG else d
     if k in LONG and 'Guarda anche' not in d:
         rel=[x for x in LONG if x!=k and x in done][:3]
         d=d.rstrip()+'\n\nGuarda anche:\n'+'\n'.join('%s https://youtu.be/%s'%(TIT[x],done[x]) for x in rel)
-        if '#' not in d.split('Guarda anche')[0].split('\n')[-1]:d+='\n\n#ISimpson #Simpson #Springfieldpedia '+HT[k]
+        if '#' not in d.split('Guarda anche')[0].split('\n')[-1]:d+='\n\n#ISimpson #Simpson #SimpsonsPedia '+HT[k]
     if k not in LONG and '#ISimpson' not in d:d=d.rstrip()+' #ISimpson'
     if k in LONG and NEW not in d:d=d.replace('Guarda anche:',NEW+'\n\nGuarda anche:',1)
+    d=re.sub(r'(?i)#springfieldpedia','#SimpsonsPedia',d)
     sn['tags']=new;sn['description']=d[:4900]
     body=dict(id=vid,snippet=sn)
     s,h,b=post('https://www.googleapis.com/youtube/v3/videos?part=snippet',json.dumps(body).encode(),H,'PUT')
