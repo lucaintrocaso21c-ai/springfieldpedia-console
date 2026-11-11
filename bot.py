@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Console Telegram di Springfieldpedia. Gira a ogni esecuzione del workflow:
+"""Console Telegram di SimpsonsPedia. Gira a ogni esecuzione del workflow:
 legge i nuovi messaggi, risponde, e a richiesta manda gli avvisi."""
 import json,os,sys,datetime as dt,urllib.request,urllib.parse
 D=os.path.join(os.path.dirname(os.path.abspath(__file__)),'data')
@@ -189,7 +189,7 @@ def handle(tg,msg,allowed,st):
     elif cmd in R:reply=R[cmd]()
     else:reply='Comando sconosciuto. Scrivi /aiuto.'
     tg.send(reply,thread=th)
-INTRO=("CONSOLE SPRINGFIELDPEDIA\n\nOgni mattina alle 8 ricevi un solo messaggio: cosa esce oggi e cosa devi fare. Il resto e nei 3 pulsanti: Oggi, Settimana, Idee. /idea testo salva un'idea.")
+INTRO=("CONSOLE SIMPSONSPEDIA\n\nOgni mattina alle 8 ricevi un solo messaggio: cosa esce oggi e cosa devi fare. Il resto e nei 3 pulsanti: Oggi, Settimana, Idee. /idea testo salva un'idea.")
 def run(tg,allowed,mode='poll'):
     st=load('state.json',{});st.setdefault('topics',{});n=0
     if mode=='poll':
