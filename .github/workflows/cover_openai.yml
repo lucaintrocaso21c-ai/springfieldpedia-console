@@ -1,0 +1,32 @@
+name: Copertine OpenAI
+on:
+  workflow_dispatch:
+    inputs:
+      cartella:
+        description: cartella con i prompt (es. covers/openai/L01)
+        default: covers/openai/L01
+permissions:
+  contents: write
+concurrency: cover-openai
+jobs:
+  cov:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install openai pillow
+      - name: Genera
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          COVER_DIR: ${{ inputs.cartella }}
+        run: python3 tools/cover_openai.py
+      - name: Salva
+        if: always()
+        run: |
+          git config user.name "console-bot"; git config user.email "bot@users.noreply.github.com"
+          git add covers || true
+          git commit -m "copertine OpenAI: ${{ inputs.cartella }}" || true
+          git pull --rebase -q origin HEAD || true
+          git push -q origin HEAD || true
