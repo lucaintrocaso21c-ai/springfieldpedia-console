@@ -1,6 +1,10 @@
 name: YouTube metti in pausa
 on:
   workflow_dispatch:
+    inputs:
+      chiavi:
+        description: id separati da virgola
+        default: S7,S8,F3,F4,R4,C1
 permissions:
   contents: read
 jobs:
@@ -11,6 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Pausa
         env:
+          PAUSE_KEYS: ${{ inputs.chiavi }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
