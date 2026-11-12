@@ -79,7 +79,8 @@
    "shorts"
   ],
   "publishAt": "2026-11-13T17:00:00Z",
-  "short": true
+  "short": true,
+  "thumb": "S01b_cover.jpg"
  },
  {
   "id": "S02b",
@@ -98,6 +99,7 @@
    "shorts"
   ],
   "publishAt": "2026-11-15T09:00:00Z",
-  "short": true
+  "short": true,
+  "thumb": "S02b_cover.jpg"
  }
 ]
