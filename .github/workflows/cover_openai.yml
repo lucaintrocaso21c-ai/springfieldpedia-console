@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       cartella:
-        description: cartella con i prompt (es. covers/openai/L01)
+        description: cartelle (separate da virgola)
         default: covers/openai/L01
 permissions:
   contents: write
