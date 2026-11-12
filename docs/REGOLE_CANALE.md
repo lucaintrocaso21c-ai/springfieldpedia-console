@@ -26,4 +26,5 @@ Fonte: docs/piano/Piano_editoriale_30_giorni.xlsx (foglio Regole operative). Sos
 - Consegna: ogni video o Short (file, copertine, copione) va SEMPRE copiato anche nella cartella del PC ~/Desktop/Sprinfildpedia/Video_da_controllare/<ID>_<Nome>/, oltre a inviarlo in chat.
 - Stile copertine Shorts: diverso dai lunghi. Basta il TITOLONE + il personaggio dei Simpson (niente Nico obbligatorio), su sfondo colorato impattante nei colori del canale, stile GriffinPedia.
 - Copertine video lunghi: delle 3 varianti A/B/C, una (almeno) deve essere in questo stile: sfondo impattante colorato coi colori del canale, titolone e personaggio dei Simpson.
+- APPROVAZIONE: non caricare MAI su YouTube (nemmeno privato/programmato) un video, Short o copertina senza l'ok esplicito dell'utente. Prima consegna i file in chat e in Video_da_controllare, poi aspetta l'approvazione.
 
