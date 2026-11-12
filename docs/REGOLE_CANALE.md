@@ -23,3 +23,4 @@ Fonte: docs/piano/Piano_editoriale_30_giorni.xlsx (foglio Regole operative). Sos
 - Upload sempre privato con publishAt (ora: 18:00 Italia nei giorni feriali, 10:00 sabato e domenica, da rivedere col report "quando i tuoi spettatori sono su YouTube").
 - Copertine sempre A/B/C, generate con OpenAI (secret OPENAI_API_KEY su GitHub).
 - Prima di ogni blocco di 5 video: usare la scheda di ricerca (docs/piano/Research_primi_5_video.xlsx) per decidere struttura, hook, titolo, miniatura, SEO.
+- Consegna: ogni video o Short (file, copertine, copione) va SEMPRE copiato anche nella cartella del PC ~/Desktop/Sprinfildpedia/Video_da_controllare/<ID>_<Nome>/, oltre a inviarlo in chat.
