@@ -1,0 +1,2 @@
+gpt-image-1.5: Error code: 400 - Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_1f7c9c70a49d41c2b426064b83e5e7df.
+gpt-image-1: Error code: 400 - The model 'gpt-image-1' does not exist.
