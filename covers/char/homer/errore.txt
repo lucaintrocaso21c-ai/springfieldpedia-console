@@ -1,2 +1,0 @@
-gpt-image-2: Error code: 400 - Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_c3dbca8c65414e17b32f6f2ab9cd8769.
-gpt-image-1.5: Error code: 400 - Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_2de3d20e9be74c43a786707ef1d80e73.
