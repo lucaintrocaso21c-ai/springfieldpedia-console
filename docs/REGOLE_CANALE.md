@@ -28,3 +28,11 @@ Fonte: docs/piano/Piano_editoriale_30_giorni.xlsx (foglio Regole operative). Sos
 - Copertine video lunghi: delle 3 varianti A/B/C, una (almeno) deve essere in questo stile: sfondo impattante colorato coi colori del canale, titolone e personaggio dei Simpson.
 - APPROVAZIONE: non caricare MAI su YouTube (nemmeno privato/programmato) un video, Short o copertina senza l'ok esplicito dell'utente. Prima consegna i file in chat e in Video_da_controllare, poi aspetta l'approvazione.
 
+
+## Montaggio video lunghi: attenzioni prese da Griffipedia (decise il 2026-11-16, da applicare dal prossimo video montato)
+I format restano i nostri; queste sono solo attenzioni di montaggio.
+1. **Conduttore solo a inizio capitolo e nel finale.** Nico compare solo all'inizio di ogni capitolo (breve, con il badge del capitolo) e nel finale con il verdetto. Non parla per tutto il video.
+2. **Molte più clip, tagli frequenti.** Obiettivo: Nico circa 15-20% del tempo, clip circa 80%. Taglio ogni 2-4 secondi circa, senza mai tagliare a metà parola o scena. Rispettare comunque le regole già in vigore sulle clip.
+3. **Il racconto segue quello che si vede.** La voce descrive la scena mostrata, quasi frase per frase. Lasciare la battuta originale come punchline dopo un po' di scena muta mentre la voce racconta.
+4. **Battuta iconica in apertura.** Il video parte con una battuta o scena iconica di pochi secondi, prima di qualsiasi presentazione, poi parla Nico.
+Riferimento: analisi del canale Griffipedia (L03 aveva Nico circa 62% del tempo e clip circa 209 s su 569 s).
