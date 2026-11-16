@@ -14,6 +14,12 @@ if MODE=='list':
         if not j.get('items'):print(k,v,'non trovato');continue
         it=j['items'][0];sn=it['snippet']
         print('VID',k,v,it['contentDetails']['duration'],it['status']['privacyStatus'],'|',sn['title'],'|',json.dumps(sn.get('tags',[]),ensure_ascii=False))
+elif MODE=='channel':
+    T=json.load(open('data/yt_tags.json'))
+    s,j=get('https://www.googleapis.com/youtube/v3/channels?part=brandingSettings&mine=true')
+    c=j['items'][0];ch=c['brandingSettings']['channel'];ch['keywords']=T['channel'];ch.pop('unsubscribedTrailer',None)
+    s,h,b=post('https://www.googleapis.com/youtube/v3/channels?part=brandingSettings',json.dumps(dict(id=c['id'],brandingSettings=dict(channel=ch))).encode(),H,'PUT')
+    print('canale',s,b[:300])
 else:
     T=json.load(open('data/yt_tags.json'))
     out=[]
