@@ -57,3 +57,11 @@ Attenzione: "simpson michael jackson" e "mondiali 2026" sono trend, ma toccare t
 
 ## 7. Limiti
 Dati = autocomplete, non volumi. Dopo 4–6 settimane usare YouTube Studio → Analytics → Ricerca di traffico per sostituire i tag con le query che portano davvero visualizzazioni.
+
+## Verifica volumi 26/11/2026 (Italia, YouTube)
+- Google Trends (geo IT, YouTube, 5 anni): 'i simpson' ≈35–45; 'natale simpson'/'un natale da cani'/'simpson natale' solo 5–7 e solo nelle settimane di dicembre (0 il resto dell'anno). Query in crescita: 'simpson un natale da cani' (+300%), 'piccolo aiutante di babbo natale (simpson)' (+90/100%).
+- 'simpson michael jackson': picchi (100 a fine luglio); 'ita' è la query associata principale.
+- Trends: 'perché i simpson prevedono tutto', 'come fanno i simpson a prevedere tutto' in impennata. Grimmione e Maude: dati insufficienti.
+- Studio > Insight > Ricerca (nuova versione) mostra video, non volumi: conferma concorrenza (video natalizi vecchi 548–579k, compilation recente 37k).
+- Proxy visualizzazioni/giorno dei concorrenti: natale lungo ~50; Maude ~90–100; MJ ~130–420; previsioni ~390–1100.
+- Conclusione: spazio sì, volumi bassi per il Natale; previsioni/MJ hanno più domanda ma più concorrenza.
