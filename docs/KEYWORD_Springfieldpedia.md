@@ -65,3 +65,8 @@ Dati = autocomplete, non volumi. Dopo 4–6 settimane usare YouTube Studio → A
 - Studio > Insight > Ricerca (nuova versione) mostra video, non volumi: conferma concorrenza (video natalizi vecchi 548–579k, compilation recente 37k).
 - Proxy visualizzazioni/giorno dei concorrenti: natale lungo ~50; Maude ~90–100; MJ ~130–420; previsioni ~390–1100.
 - Conclusione: spazio sì, volumi bassi per il Natale; previsioni/MJ hanno più domanda ma più concorrenza.
+
+## Classifica opportunità 26/11/2026 (mediana visualizzazioni/giorno dei primi 8 risultati YouTube IT; età mediana; n. video <1 anno)
+- simpson blackout 471/g (1 anno, 0 recenti) · croce che cade 267/g (4a, 2) · simpson previsioni 2026 392/g (0.9a, 1) · episodi censurati 111/g (2a, 1) · vanno in italia 108/g (7a, 1) · cattivi 105/g (4a, 0) · halloween 104/g (3a, 0; stagionale) · curiosità 100/g (6a, 1) · morti 95/g (8a, 0) · hanno previsto il futuro 94/g (3a, 2) · maude flanders 81/g (8a, 0) · paura fa novanta 71/g · easter egg 63/g (1a, 3 recenti: saturo) · torri gemelle 53/g (8a, 0; tema delicato) · grimmione 49/g (7a, 2) · episodi vietati 42/g (8a, 0) · dove si trova springfield 47/g · trump 33/g · wrestling 26/g · il signor burns 22/g · auto elettrica 16/g · giappone 15/g · personaggi dimenticati 14/g · telespalla bob 12/g · il film 10/g · kwyjibo 7/g · dietro la risata 2/g · errori 2/g · olimpiadi 1/g
+- Escluse perché dominate da compilation virali: 'couch gag' (7.916/g mediana) e 'canzoni' (1.140/g).
+- Idee Natale da riprendere nel 2027: Marge Be Not Proud, Miracle on Evergreen Terrace/Grift of the Magi, Holidays of Future Passed, Skinner's Sense of Snow/'Tis the Fifteenth Season, Fight Before Christmas/White Christmas Blues, Ned a Natale, Telespalla Bob a Natale, battute di Natale.
